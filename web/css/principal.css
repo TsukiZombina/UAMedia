@@ -7,15 +7,9 @@
 	margin-bottom: 15px;
 }
 
-
-
-
 #datos_generales_tabla table p{
 	color: #4f4f4f;
 }
-
-
-
 
 /*******************************************/
 .lista_correos img{
@@ -23,8 +17,6 @@
 	position: absolute;
 	margin-top:9px;
 }
-
-
 
 .correos h1{
 	padding-left: 30px;
@@ -40,10 +32,10 @@
 
 }
 
-
 .lista_correos a{
 	text-decoration: none;
 }
+
 .lista_correos a li{
 	background-color: #BFBFBF;
 	list-style: none;
@@ -61,16 +53,10 @@
 	border:1px solid #BFBFBF;
 }
 
-
 .visto a li{
 	background-color:#efefef;
 	border:1px solid #BFBFBF;
 }
-
-
-
-
-
 
 
 .avisos{
@@ -116,33 +102,24 @@
 	border:1px solid #BFBFBF;
 }
 
-
 .avisos b{
 	text-align: right;
 }
-
-
-
-
-
 
 .mas{
 	text-align: right;
 	margin-right: 50px;
 }
 
-
 .mas a b{
 	font-size: 20px;
 	font-weight: normal;
 }
 
-
 .mas a img{
 	width:30px;
 	
 }
-
 
 .lista_avisos img{
 	width: 30px;
@@ -172,13 +149,9 @@
 		font-size: 15px;
 	}
 
-
-
-
 	.correos p{
 		display: none;
 	}
-
 
 	.correos a li{
 		margin-left: -20px;
@@ -190,20 +163,15 @@
 		margin-top: 4px;
 		margin-bottom: 4px;
 		margin-right: 10px;
-		
-
 	}
-
-
+        
 	.lista_correos img{
 		width: 25px;
 	}
-
-
+        
 	#cuerpo_principal h1{
 		font-size: 20px;
 	}
-
 
 	.mas{
 		text-align: right;
@@ -221,10 +189,6 @@
 
 	}
 
-
-
-
-
 	.avisos p{
 		display: none;
 	}
@@ -238,7 +202,6 @@
 
 	}
 
-
 	.lista_avisos img{
 		width: 25px;
 				margin-top:5px;
@@ -248,9 +211,6 @@
 		height: auto;
 
 	}
-
-
-
 }
 
 
@@ -258,6 +218,4 @@
 	#datos_generales_tabla table{
 		width: auto;	
 	}
-
-
 }
