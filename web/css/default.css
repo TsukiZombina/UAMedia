@@ -62,7 +62,6 @@ footer{
 	background-color: #640923;
 	height: 50px;
 	text-align: right;
-	padding-top: 20px;
 	margin-top: 5px;
 	width: 100%;
 }
@@ -71,6 +70,7 @@ footer h1{
 	color:#e098ac;
 	margin-right: 20px;
 	font-weight: normal;
+        font-size: 100%;
 }
 
 /*Menú Principal*/
@@ -142,6 +142,10 @@ footer h1{
 	font-family: Tahoma, Geneva, sans-serif;
 	font-weight: normal;
 	text-decoration: underline;
+}
+
+#cuerpo_principal p.carousel{
+    color: white;
 }
 
 
