@@ -1,7 +1,7 @@
 <%-- 
     Document   : index
     Created on : 25/06/2016, 07:17:07 PM
-    Author     : Luis Toral
+    Author     : 
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
