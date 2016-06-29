@@ -1,0 +1,171 @@
+.portada img{
+	width: 150px;
+	height: 220px;
+
+}
+
+#prestamos table img{
+	border-radius: 10px;
+	border: 1px solid #640923;
+
+}
+
+/****************************************/
+#adeudos{
+	margin-left: 1200px;
+	margin-right: 50px;
+	float:right;
+}
+
+#adeudos h1{
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 20px;
+}
+
+#adeudos h1{
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 20px;
+}
+
+#adeudos p{
+	text-align: right;
+	font-weight: bold;
+	color:red;
+}
+
+#adeudos h5{
+	text-align: left;
+	min-width: 100px;
+	font-weight: normal;
+	margin-left: 5px;
+}
+
+.cabecera {	
+	border-radius:10px;
+	background-color: #640923;
+	border:0px;
+	min-height: 15px;
+	height: 40px;
+	width: 100px;
+}
+/****************************************/
+
+
+
+
+
+
+
+
+
+
+
+/****************************************/
+#prestamos table{
+	border-radius: 10px;
+	border: 1px solid #640923;
+	background-color: #E6E6E6;
+	width: 635px;
+	min-width: 300px;
+	margin: 5px;
+}
+
+#prestamos table h1{
+	color:#FFFFFF;
+	font-size: 18px;
+
+}
+
+#prestamos table p{
+	color:#E6E6E6;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+#prestamos table h2{
+
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#prestamos table h3{
+	color:#494949;
+	font-size: 15px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+
+/****************************************/
+
+
+
+#tabla_libros1{
+	float:left;
+	clear:left;
+}
+
+#tabla_libros2{
+	float:right;
+	clear:right;
+}
+
+
+#tabla_libros3{
+	float:left;
+	clear:left;     	
+}
+
+#tabla_libros4{
+	float:right;
+	clear:right;
+}
+
+
+
+
+/****************************************/
+#historial_prestamos h2{
+	padding: 5px;
+}
+
+#historial_prestamos table{
+	margin-right:20px;
+	margin-left: 20px;
+	width: auto;
+	min-width: 650px;
+	margin-right: 20px;
+	font-style: normal;
+}
+
+#historial_prestamos  table th{
+	border-left: 1px solid #640923;
+	height:20px;
+	background-color:#640923;
+	color:#FFFFFF;
+	padding: 3px;
+}
+
+#historial_prestamos  table tr:nth-child(even){
+background: #d7d8da;
+}
+
+
+#historial_prestamos  table tr:nth-child(even) td{
+color: #000000;
+}
+
+
+#historial_prestamos  table tr:nth-child(odd){
+background: #FFFFFF;
+}
+
+/*Propiedades de los td de filas impares*/
+#historial_prestamos  table tr:nth-child(odd) td{
+color: #494949;
+}

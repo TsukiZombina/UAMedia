@@ -1,0 +1,231 @@
+#informacion_tabla table{
+	border-radius: 10px;
+	margin-left: 20px;
+	border:1px solid #640923;
+	width: auto;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+
+#informacion_tabla table p{
+	color: #4f4f4f;
+	font-style: underline; 
+}
+
+#informacion_tabla table td{
+	width: 290px;
+}
+
+#horario  table{
+	margin-top: 15px;
+}
+
+
+#horario  table th{
+	border-left: 1px solid #640923;
+	height:40px;
+	background-color:#640923;
+	color:#FFFFFF;
+	padding: 3px;
+}
+
+
+#horario table{
+	min-width: 350px;
+	margin-left: 200px;
+	width: auto;
+	margin-right: 20px;
+
+
+}
+
+
+#horario  table tr:nth-child(even){
+	background: #d7d8da;
+	height:50px;
+
+}
+
+
+#horario  table tr:nth-child(even) td{
+	color: #000000;
+
+}
+
+
+#horario  table tr:nth-child(odd){
+	background: #FFFFFF;
+	height:50px;
+}
+
+/*Propiedades de los td de filas impares*/
+#horario  table tr:nth-child(odd) td{
+	color: #494949;
+}
+
+
+
+/******************HORARIO EQUIVALENTE************************/
+#horario_equivalente  table{
+	margin-top: 15px;
+	display: none;
+
+}
+
+
+#horario_equivalente  table th{
+	border-left: 1px solid #640923;
+	height:40px;
+	background-color:#640923;
+	color:#FFFFFF;
+	padding: 3px;
+}
+
+
+#horario_equivalente table{
+
+	margin-left: 20px;
+	width: auto;
+	margin-right: 20px;
+
+
+}
+
+
+#horario_equivalente  table tr:nth-child(even){
+	background: #d7d8da;
+	height:50px;
+
+}
+
+
+#horario_equivalente  table tr:nth-child(even) td{
+	color: #000000;
+
+}
+
+
+#horario_equivalente  table tr:nth-child(odd){
+	background: #FFFFFF;
+	height:50px;
+}
+
+/*Propiedades de los td de filas impares*/
+#horario_equivalente  table tr:nth-child(odd) td{
+	color: #494949;
+}
+
+
+
+
+
+@media screen and (max-width: 650px){
+	#horario table td{
+		font-size: 15px;
+	}
+	#horario table th{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 490px){
+	#horario_equivalente table{
+		display: block;
+	}
+
+	#horario table{
+		display: none;
+	}
+
+	#horario_equivalente table td{
+	font-size: 15px;
+	text-align: center;
+	}
+	#horario_equivalente table th{
+		font-size: 15px;
+		text-align: center;
+	}
+
+
+
+
+
+	#informacion_tabla table{
+		margin-left: 0px;
+		min-width: 100px;
+		margin-right: 5px;
+
+	}
+
+	#informacion_tabla table th{
+		font-size: 15px;
+		background-color: #ADADAD;
+
+		border-radius: 7px;
+		color: #640923;
+		font-weight: normal;
+		text-align: center;
+	}
+
+		
+
+
+	#informacion_tabla table p{
+		font-size: 15px;
+		text-align: center;
+		border: 1px dotted gray;
+		border-radius: 5px;
+	}
+
+	#informacion_tabla table tr{
+		background-color: white;
+		
+	}
+}
+
+
+
+
+
+
+@media screen and (max-width: 380px){
+	#horario_equivalente{
+		width: auto;
+		margin-left: -25px;
+		margin-right: -5px;
+	}
+}
+
+
+@media screen and (max-width: 340px){
+
+	#informacion_tabla table th{
+		font-size: 13px;
+		background-color: #ADADAD;
+		border: 0px outset gray;
+		
+	}
+
+
+}
+
+
+@media screen and (max-width: 330px){
+	#horario_equivalente{
+		margin-left: -25px;
+		margin-right: -15px;
+	}
+
+
+		#horario_equivalente table td{
+	font-size: 14px;
+	
+	}
+	#horario_equivalente table th{
+		font-size: 14px;
+	
+	}
+}
+
+

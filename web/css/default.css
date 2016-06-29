@@ -1,0 +1,322 @@
+*{
+	font-size: 20px;
+	color:#000000;
+	margin:0px;
+}
+
+
+
+body{
+	background-color: #d6d5d5;
+	text-align: center;
+}
+
+#contenedor_gral{
+	max-width: 1400px;
+	min-width: 300px;
+	background-color: #FFFFFF;
+	text-align: left;
+	margin: auto;
+}
+
+
+/*Encabezado*/
+header{
+	background-color: #640923;
+	height: 100px;
+	margin-bottom: 3px;
+	width: 100%;
+
+}
+
+header img{
+	height: 90px;
+	margin-left: 10px;
+	margin-top:7px;
+	float:left;
+	margin-right: 25px;
+}
+
+header h1{
+	color:#FFFFFF;
+	text-align: left;
+	font-size: 30px;
+	padding-top: 20px;
+	padding-left: auto;
+	font-weight: normal;
+
+}
+
+header h2{
+	color:#FFFFFF;
+	text-align: left;
+	font-size: 20px;
+	padding-top: 5px;
+	padding-left: auto;
+	font-weight: normal;
+	
+}
+
+/*Footer*/
+footer{
+	background-color: #640923;
+	height: 50px;
+	text-align: right;
+	padding-top: 20px;
+	margin-top: 5px;
+	width: 100%;
+}
+
+footer h1{
+	color:#e098ac;
+	margin-right: 20px;
+	font-weight: normal;
+}
+
+/*Menú Principal*/
+#bienvenido{
+	margin-top:150px;
+	margin-left:300px;
+	
+}
+#menu_principal{
+	width:98%;
+	height: 40px;
+	border: 2px solid #640923;
+	border-radius: 10px;
+	padding-bottom: 5px;
+	background-color: #640923;
+	margin-left: 10px;
+	margin-left: 10px;
+
+}
+
+#menu_principal ul{
+	padding: 9px;
+}
+
+
+
+#menu_principal ul li{
+	list-style: none;
+	display: inline;
+}
+
+
+
+#menu_principal ul li a{
+	text-decoration: none;
+	color:#FFFFFF;
+	text-align: justify;
+	margin-left: 40px;
+	margin-right: 30px;
+}
+
+#menu_principal ul li a:hover{
+	color: #e098ac;
+}
+
+
+/*Cuerpo Principal*/
+#cuerpo_principal{
+	width:99%;
+	min-height:650px;
+	/*border: 1px solid #000000;*/
+	margin-top: 5px;
+	margin-left: 5px;
+
+}
+
+#cuerpo_principal h1{
+	color:#610b0b;
+	font-size: 27px;
+	margin-left: 10px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: normal;
+}
+
+#cuerpo_principal h2{
+	color:#610b0b;
+	font-size: 20px;
+	margin-left: 20px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+
+a:focus{
+outline:0px;
+}
+
+.menu_compacto{ 
+	width:95%; 
+	background-color:#640923; 
+	text-align:right; 
+	padding: 5px;
+	cursor:pointer; 
+	color:#000000; 
+	display:none; 
+}
+
+
+
+@media screen and (max-width: 1335px){
+		#menu_principal ul li a{
+		margin-left: 25px;
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 1230px){
+		#menu_principal ul li a{
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width: 1120px){
+		#menu_principal ul li a{
+		margin-left: 5px;
+	}
+}
+
+@media screen and (max-width: 1090px){
+		#menu_principal ul li a{
+		margin-left: 1px;
+		margin-right: 15px;
+	}
+}
+
+@media screen and (max-width: 1090px){
+		#menu_principal ul li a{
+		margin-left: 1px;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 880px){
+		#menu_principal ul li a{
+		margin-left: 1px;
+		margin-right: 5px;
+	}
+
+header img{
+	height: 50px;
+	margin-left: 25px;
+	margin-top:20px;
+	float:left;
+	margin-right: 20px;
+}
+
+header h1{
+	color:#FFFFFF;
+	text-align: left;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-left: auto;
+	font-weight: normal;
+
+}
+
+header h2{
+	color:#FFFFFF;
+	text-align: left;
+	font-size: 15px;
+	padding-top: 5px;
+	padding-left: auto;
+	font-weight: normal;
+}
+
+	#menu_principal ul li a{
+		margin-left: 5px;
+	}
+}
+
+@media screen and (max-width: 875px){ 
+
+	#cuerpo_principal{
+		margin-top: 60px;
+	}
+
+	#menu_principal{
+		position: absolute; 
+ 		z-index:100; 
+	}
+
+	#menu_principal ul{
+		border-radius: 5px;
+		border: 3px solid gray;
+
+		background-color: white;
+	}
+
+	#menu_principal ul li{
+		text-align: right;
+		display: block;
+		width: auto;
+		height: 50px;
+		background-color: #640923;
+		margin-top: 5px;
+		border-radius: 5px;
+	}
+
+	#menu_principal  ul  li:hover{ 
+	background-color:#FFFFFF; 
+	border-radius:5px; 
+} 
+
+	#menu_principal ul li a {
+		color: #FFFFFF;
+		font-size: 27px;
+	}
+
+
+	#menu_principal ul{
+		display: none;
+	}
+	.menu_compacto{ 
+		display:block;
+	}
+
+
+
+
+
+
+
+	header img{
+		margin-left: 10px;
+		margin-top:5px;
+
+	}
+
+	header h1{
+		padding-top: 5px;
+	}
+
+	
+
+
+
+
+
+}
+
+@media screen and (max-width: 370px){	
+	
+
+
+	header h2{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 320px){	
+	
+	header img{
+		margin-top: 15px;
+	}
+
+
+}

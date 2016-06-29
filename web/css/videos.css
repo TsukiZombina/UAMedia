@@ -1,0 +1,84 @@
+iframe{
+	margin-left:220px;
+	margin-top: 30px;
+}
+
+.avisos{
+	padding-left:5px;
+}
+
+.avisos p{
+	color:#000000;
+	font-size: 20px;
+	font-style: italic;
+	padding-left: 5px;
+	margin-left: 37px;
+}
+
+.avisos h1{
+	padding-left: 30px;
+}
+
+.lista_avisos{
+	margin-right: 20px;
+}
+
+.lista_avisos a{
+	margin-left: 30px;
+	text-decoration: none;
+}
+
+
+.lista_avisos a li{
+	background-color: #BFBFBF;
+	list-style: none;
+	margin-left: 20px;
+	border-radius:10px;
+	padding: 7px;
+}
+
+
+.lista_avisos a li:hover{
+	background-color:#FFFFFF;
+	border:1px solid #BFBFBF;
+}
+
+.lista_avisos img{
+	width: 30px;
+	position: absolute;
+}
+
+@media screen and (max-width: 510px){
+	.avisos p{
+		display: none;
+	}
+
+
+	.lista_avisos{
+		width:100%;
+		margin-left: -60px;
+	}
+
+	.lista_avisos a{
+		margin: 0px;
+	}
+
+
+	.lista_avisos a li{
+		padding-bottom: 14px;
+		margin-top: 7px;
+		margin-bottom: 7px;
+	}
+
+
+	.lista_avisos img{
+		width: 25px;
+	}
+
+
+	#cuerpo_principal h1{
+		font-size: 20px;
+	}
+}
+
+
