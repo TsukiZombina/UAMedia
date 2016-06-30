@@ -48,7 +48,7 @@
 
                 <ul>
                     <!--<li><a href="login.html">Login</a></li>-->
-                    <li><a href="principal.jsp">Página Principal</a></li>
+                    <li><a href="index.jsp">Página Principal</a></li>
                     <li><a href="catalogo.jsp">Catálogo UEA's</a></li>
                     <li><a href="libros.jsp">Libros</a></li>
                     <li><a href="videos.jsp">Videos</a></li>

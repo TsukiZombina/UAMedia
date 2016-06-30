@@ -49,7 +49,7 @@
 
                         <ul>
                                 <!--<li><a href="login.html">Login</a></li>-->
-                                <li><a href="principal.jsp">Página Principal</a></li>
+                                <li><a href="index.jsp">Página Principal</a></li>
                                 <li><a href="catalogo.jsp">Catálogo UEA's</a></li>
                                 <li><a href="libros.jsp">Libros</a></li>
                                 <li><a href="videos.jsp">Videos</a></li>
@@ -73,18 +73,18 @@
                         <table >
                             <tr class="cabecera">
                                     <td><h1>Título:</h1></td>
-                                    <td colspan="2"><p>BIG DATA: ANALISIS DE GRANDES VOLUMENES DE DATOS EN LAS ORGANIZACIONES</p></td>
+                                    <td colspan="2"><p>Lecture 3: Analysing Complexity of Algorithms. Big Oh, Big Omega, and Big Theta Notation</p></td>
                             </tr>
 
                             <tr class="cabecera">
                                     <td><h1>Autor:</h1></td>
-                                    <td colspan="2"><p>JOYANES AGUILAR, LUIS</p></td>
+                                    <td colspan="2"><p>Gimel’farb, Georgy</p></td>
                             </tr>
 
                             <tr >
                                     <td rowspan="5">
                                             <figure class="portada">
-                                    <img src="../imgs/big_data.jpg"/>
+                                    <img src="../imgs/Documento1.png"/>
                             </figure>
                                     </td>
 
@@ -116,7 +116,7 @@
                             <tr>
                                     <td rowspan="5">
                              <figure class="portada">
-                                    <img src="../imgs/ruby_rails.jpg"/>
+                                    <img src="../imgs/Documento2.png"/>
                              </figure>
                             </td>
 
@@ -149,7 +149,7 @@
                             <tr>
                                 <td rowspan="5">
                                     <figure class="portada">
-                                            <img src="../imgs/sistemas_operativos.jpg"/>
+                                            <img src="../imgs/Documento3.png"/>
                                     </figure>
                                 </td>
                             </tr>
@@ -182,7 +182,7 @@
                                 <tr>
                                     <td rowspan="5">
                                         <figure class="portada">
-                                               <img src="../imgs/redes_computadoras.jpg"/>
+                                               <img src="../imgs/Documento4.png"/>
                                         </figure>
                                     </td>
                                 </tr>
