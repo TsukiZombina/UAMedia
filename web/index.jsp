@@ -45,7 +45,7 @@
                     <img src="imgs/menu_resp.png" width="30" height="30"/>
                 </div>
                 <ul>
-                    <li><a href="plantillas/principal.jsp">Página Principal</a></li>
+                    <li><a href="index.jsp">Página Principal</a></li>
                     <li><a href="plantillas/catalogo.jsp">Catálogo UEA's</a></li>
                     <li><a href="plantillas/libros.jsp">Libros</a></li>
                     <li><a href="plantillas/videos.jsp">Videos</a></li>

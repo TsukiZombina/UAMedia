@@ -9,14 +9,16 @@
 <html>
     <head>
         <meta charset = "utf-8"/>
-            <meta keywords = "Sistema Información UAM, Kardex UAM"/>
-            <meta description = "Modulo de información del alumno"/>
-            <title>UAMEDIA</title>
+        <meta keywords = "Documentos"/>
+        <meta description = "Documentos"/>
+        <title>UAMedia</title>
 
-            <!--Códigos Externos-->
-            <link rel="stylesheet" href="../css/default.css">
-            <link rel="stylesheet" href="../css/principal.css">
-            <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <!--Códigos Externos-->
+        <link rel="stylesheet" href="../css/default.css">
+        <link rel="stylesheet" href="../css/principal.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
     </head>
     <body>
         <!--Menú Responsivo-->
@@ -38,7 +40,6 @@
                 <h2>UAMEDIA - Repositorio de contenidos UEA's</h2>
             </header>
 
-
             <!--Sección Menú-->
             <nav id="menu_principal">
                 <div class="menu_compacto">
@@ -59,58 +60,59 @@
             </nav>
             <!--Fin Sección Menú-->
 
-        <section class="correos">
-        <h2>Bienvenido a UAMEDIA</h2>
+            <!--Sección Cuerpo Principal-->
+            <section id="cuerpo_principal">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+                <!-- Indice -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
 
-        <ul class="lista_correos">
-            <a href="#">
-                <li>
-                    <img src="../imgs/vineta_correo.png"/>
-                    <h1>Doc Reciente 1</h1>	
-                    <p>Descripcion...</p>
-                </li>
-            </a>
+                <!-- Slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="../imgs/quimica.jpg" alt="Química">
+                    <div class="carousel-caption">
+                      <h3>Química</h3>
+                      <p class="carousel">Encuentra documentos de química.</p>
+                    </div>
+                  </div>
 
-            <a href="#">
-                <li>
-                    <img src="../imgs/vineta_correo.png"/>
-                    <h1>Doc Reciente 2</h1>	
-                    <p>Descripcion...</p>
-                </li>
-            </a>                    
+                  <div class="item">
+                    <img src="../imgs/fisica.jpg" alt="Física">
+                    <div class="carousel-caption">
+                      <h3>Física</h3>
+                      <p class="carousel">Encuentra documentos de física.</p>
+                    </div>
+                  </div>
+                </div>
 
-            <a href="#">
-                <li>
-                    <img src="../imgs/vineta_correo.png"/>
-                    <h1>Doc Reciente 3</h1>	
-                    <p>Descripcion...</p>
-                </li>
-            </a>
-
-            <div>
-            <a  href="#">
-                <li>
-                    <img src="../imgs/vineta_correo_visto.png"/>
-                    <h1>Doc Reciente 4</h1>	
-                    <p>Descripcion...</p>
-                </li>
-            </a>
-
-            <a href="#">
-                <li>
-                    <img src="../imgs/vineta_correo_visto.png"/>
-                    <h1>Doc Reciente 5</h1>	
-                    <p>Descripcion...</p>
-                </li>
-            </a>
-        </div>
+                <!-- Controles -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previo</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Siguente</span>
+                </a>
+              </div>
+                <article id="bienvenido">                    
+                    <h1>Bienvenido a UAMedia<h1>
+                    <p>En este sitio podrás compartir información 
+                    con la comunidad universitaria.</p>
+                </article>
+            </section>
+            <!--Fin Sección Cuerpo Principal-->
             
             <section class="avisos">
                 <h2>Avisos</h2>
                 <p>Entérate de lo que acontece en tu universidad: avisos, conferencias, eventos, recordatorios</p>
-                
+
                 <ul class="lista_avisos">
-                    
+
                 <a href="#">
                     <li>
                         <img src="../imgs/vineta_aviso_calendario.gif"/>
@@ -118,7 +120,7 @@
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
                 </a>
-                    
+
                 <a href="#">
                     <li>
                         <img src="../imgs/vineta_aviso_calendario.gif"/>
@@ -126,7 +128,7 @@
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
                 </a>                    
-                    
+
                 <a href="#">
                     <li>
                         <img src="../imgs/vineta_aviso_calendario.gif"/>
@@ -134,7 +136,7 @@
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
                 </a>
-                    
+
                 <a href="#">
                     <li>
                         <img src="../imgs/vineta_aviso_calendario.gif"/>
@@ -142,7 +144,7 @@
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
                 </a>
-                    
+
                 <a href="#">
                     <li>
                         <img src="../imgs/vineta_aviso_calendario.gif"/>
@@ -150,7 +152,7 @@
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
                 </a>
-                    
+
                 <a href="#">
                     <li>
                         <img src="../imgs/vineta_aviso_calendario.gif"/>
@@ -158,7 +160,7 @@
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
                 </a>
-                    
+
                 <a href="#">
                     <li>
                         <img src="../imgs/vineta_aviso_calendario.gif"/>
@@ -166,17 +168,14 @@
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
                 </a>                                                            
-                   
-            </section>
-            
-            <div class="mas">
-                <a href="avisos.html"><b>Más Avisos</b></a>
-                <a href="avisos.html"><img src="../imgs/flecha_der.png"/></a>
-            <div>
-                
-        </section>
-        <!--Fin Sección Cuerpo Principal-->
 
+                <div class="mas">
+                    <a href="avisos.html"><b>Más Avisos</b></a>
+                    <a href="avisos.html"><img src="../imgs/flecha_der.png"/></a>
+                <div>       
+            </section>
+            <!--Fin Sección Avisos-->
+        </div>
 
         <div class="limpia_estilo"></div>
             <!--FOOTER-->
