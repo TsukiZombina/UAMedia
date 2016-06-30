@@ -78,7 +78,7 @@
 
                             <tr class="cabecera">
                                     <td><h1>Autor:</h1></td>
-                                    <td colspan="2"><p>Gimel’farb, Georgy</p></td>
+                                    <td colspan="2"><p>Autor1</p></td>
                             </tr>
 
                             <tr >
@@ -105,12 +105,12 @@
                         <table>
                             <tr class="cabecera">
                                     <td><h1>Título:</h1></td>
-                                    <td colspan="2"><p>RUBY ON RAILS: DEASRROLLO PRACTICO DE APLICACIONES WEB</p></td>		
+                                    <td colspan="2"><p>Experiment 15: Exploring the World of Polymers</p></td>		
                             </tr>
 
                             <tr class="cabecera">
                                     <td><h1>Autor:</h1></td>
-                                    <td colspan="2"><p>SANTIAGO PONCE MORENO</p></td>		
+                                    <td colspan="2"><p>Autor2</p></td>		
                             </tr>
 
                             <tr>
@@ -138,12 +138,12 @@
                         <table>
                             <tr class="cabecera" >
                                 <td ><h1>Título:</h1></td>
-                                <td colspan="2"><p>SISTEMAS OPERATIVOS MODERNOS</p></td>
+                                <td colspan="2"><p>Gestión de Stocks</p></td>
                             </tr>
 
                             <tr class="cabecera">
                                 <td ><h1>Autor:</h1></td>
-                                <td colspan="2"><p>ANDREW S. TANENBAUM</p></td>
+                                <td colspan="2"><p>Autor3</p></td>
                             </tr>
 
                             <tr>
@@ -171,12 +171,12 @@
                             <table>				
                                 <tr class="cabecera">
                                         <td ><h1>Título:</h1></td>
-                                        <td colspan="2"><p>REDES DE COMPUTADORAS: UN ENFOQUE DESCENDENTE</p></td>		
+                                        <td colspan="2"><p>C++ Templates -- A Simple Example</p></td>		
                                 </tr>
 
                                 <tr class="cabecera">
                                         <td ><h1>Autor:</h1></td>
-                                        <td colspan="2"><p>JAMES F. KUROSE</p></td>		
+                                        <td colspan="2"><p>Autor4</p></td>		
                                 </tr>
 
                                 <tr>
@@ -200,7 +200,7 @@
 
                 <br><br>
                 <section id="historial_prestamos"><br>
-                    <h2>Más libros<h2>  
+                    <!--<h2>Más libros<h2>-->
                     <table>
                         <tr>
                                 <th>No.</th>
@@ -211,84 +211,57 @@
                         </tr>
                         <tr>
                                 <td>1</td>
-                                <td>El mundo de Sofia : novela sobre historia de la filosofia / Jostein Gaarder.</td>
-                                <td>28/11/2014</td>
+                                <td>Documento 1 / Nombre del Autor Original</td>
+                                <td>28/05/2016</td>
                                 <td>Autor_1</td>
                         </tr>
                         <tr>
                                 <td>2</td>
-                                <td>Resumen grafico de la historia del arte / por M.D.D.</td>
-                                <td>15/11/2014</td>
+                                <td>Documento 2 / Nombre del Autor Original</td>
+                                <td>15/06/2016</td>
                                 <td>Autor_2</td>
                                 <td></td>
                         </tr>
                         <tr>
                                 <td>3</td>
-                                <td>Homo videns : la sociedad teledirigida / Giovanni Sartori.</td>
-                                <td>01/09/2014</td>
+                                <td>Documento 3 / Nombre del Autor Original</td>
+                                <td>01/06/2016</td>
                                 <td>Autor_4</td>
                                 <td></td>
                         </tr>
                         <tr>
                                 <td>4</td>
-                                <td>Los objetos fractales : forma, azar y dimension / Benoit Mandelbrot</td>
-                                <td>03/07/2014</td>
+                                <td>Documento 4 / Nombre del Autor Original</td>
+                                <td>03/04/2016</td>
                                 <td>Autor_1</td>
                                 <td></td>
                         </tr>
                         <tr>
                                 <td>5</td>
-                                <td>La rodilla de Lucy : los primeros pasos hacia la humanidad / Yves Coppens</td>
-                                <td>16/05/2013</td>
+                                <td>Documento 5 / Nombre del Autor Original</td>
+                                <td>16/05/2015</td>
                                 <td>Autor_7</td>
                         </tr>
                         <tr>
                                 <td>6</td>
-                                <td>Curso de CSS / Christopher Schmitt.</td>
-                                <td>20/03/2013</td>
+                                <td>Documento 6 / Nombre del Autor Original</td>
+                                <td>20/03/2015</td>
                                 <td>Autor_1</td>
                                 <td></td>
                         </tr>
                         <tr>
                                 <td>7</td>
-                                <td>Curso de Ruby / Lucas Carlson, Leonard Richardson.</td>
-                                <td>10/03/2013</td>
+                                <td>Documento 7 / Nombre del Autor Original</td>
+                                <td>10/03/2015</td>
                                 <td>Autor_9</td>
                                 <td></td>
                         </tr>
                         <tr>
                                 <td>8</td>
-                                <td>Zapata y la revolucion mexicana / por John Womack, Jr.</td>
-                                <td>29/01/2013</td>
+                                <td>Documento 8 / Nombre del Autor Original</td>
+                                <td>29/01/2015</td>
                                 <td>Autor_7</td>
                                 <td></td>
-                        </tr>
-                        <tr>
-                                <td>9</td>
-                                <td>Estructuras de datos y algoritmos con Java / Adam Drozdek</td>
-                                <td>30/11/2012</td>
-                                <td>Autor_4</td>
-                                <td></td>
-                        </tr>
-                        <tr>
-                                <td>10</td>
-                                <td>Ecuaciones diferenciales ordinarias : introducción / Ernesto Javier Espinosa Herrera</td>
-                                <td>02/11/2012</td>
-                                <td>Autor_18</td>
-                                <td></td>
-                        </tr>
-                        <tr>
-                                <td>11</td>
-                                <td>Delirio / Laura Restrepo.</td>
-                                <td>15/10/2012</td>
-                                <td>Autor_14</td>
-                                <td></td>
-                        </tr>
-                        <tr>
-                                <td>12</td>
-                                <td>Física para la ciencia y la tecnología / Paul A. Tipler.</td>
-                                <td>08/10/2012</td>
-                                <td>Autor_1</td>
                         </tr>
                     </table>           
                 </section>

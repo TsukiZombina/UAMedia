@@ -155,12 +155,6 @@
 background: #d7d8da;
 }
 
-
-#historial_prestamos  table tr:nth-child(even) td{
-color: #000000;
-}
-
-
 #historial_prestamos  table tr:nth-child(odd){
 background: #FFFFFF;
 }
@@ -168,4 +162,8 @@ background: #FFFFFF;
 /*Propiedades de los td de filas impares*/
 #historial_prestamos  table tr:nth-child(odd) td{
 color: #494949;
+}
+
+#historial_prestamos  table tr:nth-child(even) td{
+color: #000000;
 }

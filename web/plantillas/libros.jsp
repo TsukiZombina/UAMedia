@@ -200,7 +200,7 @@
 
                 <br><br>
                 <section id="historial_prestamos"><br>
-                    <h2>Más libros<h2>  
+                    <!--<h2>Más libros<h2>-->
                     <table>
                         <tr>
                                 <th>No.</th>
