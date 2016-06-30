@@ -1,7 +1,7 @@
 <%-- 
     Document   : documentos
     Created on : 25/06/2016, 07:41:39 PM
-    Author     : Luis Toral
+    Author     : Equipo 3
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
