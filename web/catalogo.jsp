@@ -22,79 +22,80 @@
     <body>
         <!--Menú Responsivo-->
 	<script type="text/javascript">
-			$(document).ready(function(){
-				$('.menu_compacto').click(function(){
-					$('#menu_principal > ul').slideToggle(1500);
-				});
+            $(document).ready(function()
+            {
+                $('.menu_compacto').click(function()
+                {
+                    $('#menu_principal > ul').slideToggle(1500);
+                });
             });
 	</script>
-		<!--Fin-->
+	<!--Fin-->
+        <div id="contenedor_gral">
+            <header>
+                <img src="../imgs/logo.png"/>
+		<h1>UNIVERSIDAD AUTÓNOMA METROPOLITANA</h1>
+		<h2>UAMEDIA - Repositorio de contenidos UEA's</h2>
+            </header>
 
-		<div id="contenedor_gral">
-
-			<header>
-				<img src="../imgs/logo.png"/>
-				<h1>UNIVERSIDAD AUTÓNOMA METROPOLITANA</H1>
-				<h2>UAMEDIA - Repositorio de contenidos UEA's</h2>
-			</header>
-
-			<!--Sección Menú-->
-			<nav id="menu_principal">
-				<div class="menu_compacto">
-				    <img src="../imgs/menu_resp.png" width="30" height="30"/>
-				</div>
+            <!--Sección Menú-->
+            <nav id="menu_principal">
+                <div class="menu_compacto">
+                    <img src="../imgs/menu_resp.png" width="30" height="30"/>
+		</div>
                 
-				<ul>
-					<!--<li><a href="login.html">Login</a></li>-->
-					<li><a href="index.jsp">Página Principal</a></li>
-					<li><a href="catalogo.jsp">Catálogo UEA's</a></li>
-					<li><a href="libros.jsp">Libros</a></li>
-					<li><a href="videos.jsp">Videos</a></li>
-					<li><a href="documentos.jsp">Documentos</a></li>
-					<li><a href="perfil.jsp">Mi Perfil</a></li>
-					<li><a href="recurso.jsp">Añadir Recurso</a></li>
-					<li><a href="../index.jsp">Salir</a></li>
-
-					</ul>
-			</nav>
-			<!--Fin Sección Menú-->
+		<ul>
+                    <!--<li><a href="login.html">Login</a></li>-->
+                    <li><a href="index.jsp">Página Principal</a></li>
+                    <li><a href="catalogo.jsp">Catálogo UEA's</a></li>
+                    <li><a href="libros.jsp">Libros</a></li>
+                    <li><a href="videos.jsp">Videos</a></li>
+                    <li><a href="documentos.jsp">Documentos</a></li>
+                    <li><a href="perfil.jsp">Mi Perfil</a></li>
+                    <li><a href="recurso.jsp">Añadir Recurso</a></li>
+                    <li><a href="../index.jsp">Salir</a></li>
+		</ul>
+            </nav>
+            <!--Fin Sección Menú-->
             
             <div id="carrusel">
-                <!--<a href="#" class="flecha_izquierda"><img src="../imgs/flecha_izquierda.jpg" /></a>
-                <a href="#" class="flecha_derecha"><img src="../imgs/flecha_derecha.png" /></a> -->
                 <div class="carrusel">
                     <div class="product" id="area_computacion">
                         <img class="img_carrusel" src="../imgs/computacion.jpg" width="195px" height="100px" />
                         <p>Computación</p>
                     </div>
+                    
                     <div class="product" id="area_fisica">
                         <img class="img_carrusel" src="../imgs/fisica.jpg" width="195px" height="100px" />
                         <p>Física</p>
                     </div>
+                    
                     <div class="product" id="area_matematicas">
                         <img class="img_carrusel" src="../imgs/matematicas.png" width="195px" height="100px" />
                         <p>Matemáticas</p>
                     </div>
+                    
                     <div class="product" id="area_quimica">
                         <img class="img_carrusel" src="../imgs/quimica.jpg" width="195px" height="100px" />
                         <p>Química</p>
                     </div>
+                    
                     <div class="product" id="area_optativas">
                         <img class="img_carrusel" src="../imgs/optativas.jpg" width="195px" height="100px" />
                         <p>Optativas</p>
                     </div>
                 </div>
-            </div>
+        </div>
 
-			<!--Sección Cuerpo Principal-->
-			<section id="cuerpo_principal">
-                <h1>Catálogo de UEA's</h1>
-	 		<section id="ordena_ueas">
-            	<h2>Ordenar por: </h2>
+	<!--Sección Cuerpo Principal-->
+	<section id="cuerpo_principal">
+            <h1>Catálogo de UEA's</h1>
+            <section id="ordena_ueas">
+            <h2>Ordenar por: </h2>
                 <select name="ordena_ueas">
                     <option value="1">Área</option>
                     <option value="2">UEA</option> 
-                   	<option value="3">Nombre de la UEA</option>                
+                   <option value="3">Nombre de la UEA</option>                
                 </select>
             </section>
                 
@@ -199,61 +200,14 @@
                 </table>
             </section>
         </section>
-			<!--Fin Sección Cuerpo Principal-->
+	<!--Fin Sección Cuerpo Principal-->
 
-			<!--FOOTER-->
-			<footer>
-				<h1>Gestor de contenidos de UEA's proporcionados por alumnos y académicos<h1>
-			</footer>
-			<!--Fin FOOTER-->
-
-            </div>
-            
-            <!--Funcionalidad Carrusel--
-                <script src="../jquery.js" type="text/javascript"></script>
-                <script>
-                    var posicion = 0;
-                    var imagenes = new Array();
-                    $(document).ready(function() {
-                        //alert(jQuery('.texto').html());
-                        var numeroImatges = 6;
-                        if(numeroImatges<=3){
-                            $('.flecha_derecha').css('display','none');
-                            $('.flecha_izquierda').css('display','none');
-                        }
-                        
-                        $('.flecha_izquierda').live('click',function(){
-                            if(posicion>0){
-                                posicion = posicion-1;
-                            }else{
-                                posicion = numeroImatges-3;
-                            }
-                            $(".carrusel").animate({"left": -($('#product_'+posicion).position().left)}, 600);
-                            return false;
-                        });
-                        
-                        $('.flecha_izquierda').hover(function(){
-                            $(this).css('opacity','0.5');
-                        },function(){
-                            $(this).css('opacity','1');
-                        });
-                        $('.flecha_derecha').hover(function(){
-                            $(this).css('opacity','0.5');
-                        },function(){
-                            $(this).css('opacity','1');
-                        });
-                        $('.flecha_derecha').live('click',function(){
-                            if(numeroImatges>posicion+3){
-                                posicion = posicion+1;
-                            }else{
-                                posicion = 0;
-                            }
-                            $(".carrusel").animate({"left": -($('#product_'+posicion).position().left)}, 600);
-                            return false;
-                        });
-                    });
-                </script>
-                <!--Fin Funcionalidad Carrusel-->
-            
+	<!--FOOTER-->
+	<footer>
+            <h1>Gestor de contenidos de UEA's proporcionados por alumnos y académicos<h1>
+	</footer>
+	<!--Fin FOOTER-->
+        
+        </div>
     </body>
 </html>
