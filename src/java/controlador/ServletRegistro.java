@@ -48,7 +48,8 @@ public class ServletRegistro extends HttpServlet {
                         }else
                         {
                             JOptionPane.showMessageDialog(null, "La matrícula es obligatoria", "Error", JOptionPane.ERROR_MESSAGE);
-                            request.getRequestDispatcher("/plantillas/registro.jsp").forward(request, response);
+                             RequestDispatcher dispatcher = request.getRequestDispatcher("registro.jsp");
+                                     dispatcher.forward(request, response);
                         }	
 	}
 }
