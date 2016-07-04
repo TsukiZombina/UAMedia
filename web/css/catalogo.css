@@ -4,6 +4,7 @@
 }
 
 #carrusel{float:left; width:1500px; overflow:hidden; height:155px; position:relative; margin-top:20px;}
+/*prueba para commit y push*/
 /*#carrusel .flecha_izquierda{position:absolute; left:10px; z-index:1; top:50%; margin-top:-9px;}
 #carrusel .flecha_derecha{position:absolute; right:10px; z-index:1; top:50%; margin-top:-9px;}*/
 .carrusel{width:1500px;left:150px; position:absolute; z-index:0}
