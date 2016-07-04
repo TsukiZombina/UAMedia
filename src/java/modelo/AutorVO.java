@@ -1,156 +1,94 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package modelo;
 
+/**
+ *
+ * @author Luis Toral
+ */
 public class AutorVO {
-	
-    
-    
-    private String nombre;
-    private String sexo;
-    private String fecha;
     private String nick;
+    private String nombre;
     private String matricula;
     private String correo;
-    private String carrera;
-    private String contrasena;
-    private String rcontrasena;
+    private String sexo;
+    private String fecha;
+    private String contraseña;
 
-    public AutorVO(String nombre, String sexo, String fecha, 
-            String nick, String matricula, String correo, String carrera, 
-            String contrasena, String rcontrasena) {
-        this.nombre = nombre;
-        this.sexo = sexo;
-        this.fecha = fecha;
+    public AutorVO(String nick, String nombre, String matricula, String correo, 
+            String sexo, String fecha, String contraseña) {
         this.nick = nick;
+        this.nombre = nombre;
         this.matricula = matricula;
         this.correo = correo;
-        this.carrera = carrera;
-        this.contrasena = contrasena;
-        this.rcontrasena = rcontrasena;
-    }
-
-    /**
-     * @return the nombre
-     */
-    public String getNombre() {
-        return nombre;
-    }
-
-    /**
-     * @param nombre the nombre to set
-     */
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    /**
-     * @return the sexo
-     */
-    public String getSexo() {
-        return sexo;
-    }
-
-    /**
-     * @param sexo the sexo to set
-     */
-    public void setSexo(String sexo) {
         this.sexo = sexo;
-    }
-
-    /**
-     * @return the fecha
-     */
-    public String getFecha() {
-        return fecha;
-    }
-
-    /**
-     * @param fecha the fecha to set
-     */
-    public void setFecha(String fecha) {
         this.fecha = fecha;
+        this.contraseña = contraseña;
     }
 
-    /**
-     * @return the nick
-     */
+    
+
+    public AutorVO() {
+        
+    }
+
     public String getNick() {
         return nick;
     }
 
-    /**
-     * @param nick the nick to set
-     */
     public void setNick(String nick) {
         this.nick = nick;
     }
 
-    /**
-     * @return the matricula
-     */
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getMatricula() {
         return matricula;
     }
 
-    /**
-     * @param matricula the matricula to set
-     */
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
 
-    /**
-     * @return the correo
-     */
     public String getCorreo() {
         return correo;
     }
 
-    /**
-     * @param correo the correo to set
-     */
     public void setCorreo(String correo) {
         this.correo = correo;
     }
 
-    /**
-     * @return the carrera
-     */
-    public String getCarrera() {
-        return carrera;
+    public String getSexo() {
+        return sexo;
     }
 
-    /**
-     * @param carrera the carrera to set
-     */
-    public void setCarrera(String carrera) {
-        this.carrera = carrera;
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
     }
 
-    /**
-     * @return the contrasena
-     */
-    public String getContrasena() {
-        return contrasena;
+    public String getFecha() {
+        return fecha;
     }
 
-    /**
-     * @param contrasena the contrasena to set
-     */
-    public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
-    }  
-    
-     /**
-     * @return the rcontrasena
-     */
-    public String getRContrasena() {
-        return rcontrasena;
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
-    /**
-     * @param rcontrasena the rcontrasena to set
-     */
-    public void setRContrasena(String rcontrasena) {
-        this.rcontrasena = rcontrasena;
-    }   
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
+
 }
