@@ -5,7 +5,6 @@ public class AutorVO {
     
     
     private String nombre;
-    private String apellidos;
     private String sexo;
     private String fecha;
     private String nick;
@@ -15,11 +14,10 @@ public class AutorVO {
     private String contrasena;
     private String rcontrasena;
 
-    public AutorVO(String nombre, String apellidos, String sexo, String fecha, 
+    public AutorVO(String nombre, String sexo, String fecha, 
             String nick, String matricula, String correo, String carrera, 
             String contrasena, String rcontrasena) {
         this.nombre = nombre;
-        this.apellidos = apellidos;
         this.sexo = sexo;
         this.fecha = fecha;
         this.nick = nick;
@@ -42,20 +40,6 @@ public class AutorVO {
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    /**
-     * @return the apellidos
-     */
-    public String getApellidos() {
-        return apellidos;
-    }
-
-    /**
-     * @param apellidos the apellidos to set
-     */
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
     }
 
     /**

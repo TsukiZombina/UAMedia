@@ -40,9 +40,9 @@ public class ServletRegistroAutor extends HttpServlet {
 		String contrasena=request.getParameter("contraseña");
                 String rcontrasena=request.getParameter("repitecontrasena");
                 
-	        AutorVO unAlumno=new AutorVO(nombre, apellidos, sexo, fecha, 
+	        AutorVO unAutor=new AutorVO(nombre, sexo, fecha, 
             nick, matricula, correo, carrera, contrasena, rcontrasena);
-			boolean respuesta=AutorDAO.agregarAlumno(unAlumno);
+			boolean respuesta=AutorDAO.agregarAutor(unAutor);
                         if(!matricula.isEmpty()){
                             if(respuesta){
                                     request.getRequestDispatcher("mensajeOK.jsp").forward(request, response);
