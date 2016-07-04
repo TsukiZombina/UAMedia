@@ -32,7 +32,6 @@
 
 
         <div id="contenedor_gral">
-
             <header>
                 <img src="../imgs/logo.png"/>
                 <h1>UNIVERSIDAD AUTÓNOMA METROPOLITANA</H1>
@@ -57,38 +56,33 @@
             <section id="cuerpo_principal">
 
                 <h1>Registrar nuevo usuario</h1>
-
-                
-                    <form action="ServletRegistro" method="post" > 
-                        <table>
-                            <tr>
-                                <td>            Nombre </td>
-                                <td><input type="text" size="20" name="nombre"></td>
-                            </tr>
-                            <tr>
-                                <td>            User </td>
-                                <td><input type="text" size="20" name="user"></td>
-                            </tr>
-                            <tr>
-                                <td>            Correo </td>
-                                <td><input type="text" size="20" name="correo"></td>
-                            </tr>
-                            <tr>
-                                <td>            Matricula </td>
-                                <td><input type="text" size="20" name="matricula"></td>
-                            </tr>
-                            <tr>
-                                <td>            Contraseña </td>
-                                <td><input type="text" size="20" name="contraseña"></td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="2" align="center"> <input type="submit" value="Registrar"></td>
-                            </tr>
-                         </table>
-                    </form> 
-                
-            
+                <form action="ServletRegistroAlumno" method="post">
+                <table>
+                    <tr>
+                        <td>Matricula </td>
+                        <td><input type="text" size="20" name="matricula"></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre(s) del alumno </td>
+                        <td><input type="text" size="20" name="nombre"></td>
+                    </tr>
+                    <tr>
+                        <td>Apellidos </td>
+                        <td><input type="text" size="20" name="apellidos"></td>
+                    </tr>
+                    <tr>
+                    <td>Correo </td>
+                        <td><input type="text" size="20" name="correo"></td>
+                    </tr>
+                    <tr>
+                        <td>Carrera </td>
+                        <td><input type="text" size="20" name="carrera"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"> <input type="submit" value="Guardar alumno"></td>
+                    </tr>
+                 </table>
+            </form>
             </section>
                 <!--Fin Sección Cuerpo Principal-->
 

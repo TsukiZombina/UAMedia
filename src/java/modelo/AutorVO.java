@@ -1,46 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modelo;
 
-/**
- *
- * @author Luis Toral
- */
 public class AutorVO {
-    private String nick;
+	
+    private String matricula;	
     private String nombre;
-    private String matricula;
+    private String apellidos;
     private String correo;
-    private String sexo;
-    private String fecha;
-    private String contraseña;
+    private String carrera;
 
-    public AutorVO(String nick, String nombre, String matricula, String correo, 
-            String sexo, String fecha, String contraseña) {
-        this.nick = nick;
-        this.nombre = nombre;
+    public AutorVO(String matricula, String nombre, String apellidos, String correo, String carrera) {
         this.matricula = matricula;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
         this.correo = correo;
-        this.sexo = sexo;
-        this.fecha = fecha;
-        this.contraseña = contraseña;
+        this.carrera = carrera;
     }
 
-    
-
-    public AutorVO() {
         
+    public String getMatricula() {
+        return matricula;
     }
 
-    public String getNick() {
-        return nick;
-    }
-
-    public void setNick(String nick) {
-        this.nick = nick;
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
 
     public String getNombre() {
@@ -51,12 +33,12 @@ public class AutorVO {
         this.nombre = nombre;
     }
 
-    public String getMatricula() {
-        return matricula;
+    public String getApellidos() {
+        return apellidos;
     }
 
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
     public String getCorreo() {
@@ -67,28 +49,11 @@ public class AutorVO {
         this.correo = correo;
     }
 
-    public String getSexo() {
-        return sexo;
+    public String getCarrera() {
+        return carrera;
     }
 
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
     }
-
-    public String getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
-    }
-
-    public String getContraseña() {
-        return contraseña;
-    }
-
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
-    }
-
 }
