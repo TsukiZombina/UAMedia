@@ -10,8 +10,8 @@ public class CatalogoVO {
     private String nombreUea;
     private int archivos;
     
- /*   public CatalogoVO() {
-    }*/
+    public CatalogoVO() {
+    }
     
     public CatalogoVO(String area, String uea, String nombreUea, int archivos) {
         this.area = area;
@@ -20,7 +20,7 @@ public class CatalogoVO {
         this.archivos = archivos;
     }
     
-    public String getArea () {
+    public String getArea() {
         return area;
     }
     public void setArea (String area) {
@@ -35,14 +35,14 @@ public class CatalogoVO {
         this.uea = uea;
     }
     
-    public String getNombreUea () {
+    public String getNombreUea() {
         return nombreUea;
     }
     public void setNombreUea (String nombreUea) {
         this.nombreUea = nombreUea;
     }
     
-    public int getArchivos () {
+    public int getArchivos() {
         return archivos;
     }
     public void setArchivos (int archivos) {
