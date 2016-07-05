@@ -72,29 +72,7 @@
                     <p>Videos recomendados por la comunidad de acuerdo a popularidad</p>
 
                     <iframe width="854" height="480" src="https://www.youtube.com/embed/aqxgWHBe1aE" frameborder="0" margin-left="100px" allowfullscreen></iframe>
-                    
-                        <section>
-                            <form action="ServletVideo" method="post">
-                                <table>
-                                <tr>
-                                    <td>Nombre: </td>
-                                    <td><input type="text" size="45" name="nombreVideo"></td>
-                                </tr>
-                                <tr>
-                                    <td>Descripcion: </td>
-                                    <td><input type="text" size="45" name="descripcionVideo"></td>
-                                </tr>
-                                <tr>
-                                    <td>url: </td>
-                                    <td><input type="text" size="45" name="urlVideo"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" align="center"> <input type="submit" value="Guardar video"></td>
-                                </tr>
-                                </table>
-                            </form>
-                        </section>
-                    
+                                        
                     <ul class="lista_avisos">
 
                         <a href="#">

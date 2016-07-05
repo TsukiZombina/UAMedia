@@ -8,7 +8,7 @@ public class ConexionBD {
 
 	static public String bd = "uamedia";
 	   static public String login = "root";
-	   static public String password = "behappy";
+	   static public String password = "root";
 	   static public String url = "jdbc:mysql://127.0.0.1:3306/"+bd;
 
 	   //
