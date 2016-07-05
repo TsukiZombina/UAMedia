@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package controlador;
-​
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,19 +12,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.swing.JOptionPane;
-​
 import modelo.AñadirRecursoDAO;
-​
 import modelo.AñadirRecursoVO;
-​
 import java.text.SimpleDateFormat;
 import java.util.*;
-​
+
 /**
  *
  * @author Horowitz
  */
-​
+
 /**
  * Servlet implementation class ServletRegistro
  */
@@ -32,7 +29,6 @@ import java.util.*;
 public class ServletAñadirRecurso extends HttpServlet{
  
     private static final long serialVersionUID = 1L;
-​
   
     public ServletAñadirRecurso() {
         // TODO Auto-generated constructor stub
@@ -51,19 +47,15 @@ public class ServletAñadirRecurso extends HttpServlet{
 		
                 String tema=request.getParameter("tema");
                 String materia=request.getParameter("materia");
-​
                 //String fecha=request.getParameter("fecha");
             	String tipoRecurso=request.getParameter("tipoRecurso");
-​
-​
-  
-​
-   Date fechaAhora = new Date();
-   SimpleDateFormat ft = 
-   new SimpleDateFormat ("MM/dd/yy");
-   String fecha = ft.format(fechaAhora);
+
+    Date fechaAhora = new Date();
+    SimpleDateFormat ft = 
+    new SimpleDateFormat ("MM/dd/yy");
+    String fecha = ft.format(fechaAhora);
    
-	        AñadirRecursoVO unNuevoRecurso=new AñadirRecursoVO(nombreRecurso, descripcionRecurso,tema,  materia,  autor,  tipoRecurso,  enlace,  fecha);
+                AñadirRecursoVO unNuevoRecurso=new AñadirRecursoVO(nombreRecurso, descripcionRecurso,tema,  materia,  autor,  tipoRecurso,  enlace,  fecha);
 			boolean respuesta=AñadirRecursoDAO.agregarRecurso(unNuevoRecurso);
                         if(!nombreRecurso.isEmpty()){
                             if(respuesta){
@@ -75,10 +67,6 @@ public class ServletAñadirRecurso extends HttpServlet{
                         {
                             JOptionPane.showMessageDialog(null, "El nombre del recurso es obligatorio", "Error", JOptionPane.ERROR_MESSAGE);
                             request.getRequestDispatcher("index.jsp").forward(request, response);
-                        }
-​
-		
+                        }	
 	}
-        
-​
 }
