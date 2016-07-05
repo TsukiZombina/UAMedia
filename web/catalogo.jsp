@@ -31,7 +31,7 @@
             });
 	</script>
 	<!--Fin-->
-        <div id="contenedor_gral">
+        <section id="contenedor_gral">
             <header>
                 <img src="../imgs/logo.png"/>
 		<h1>UNIVERSIDAD AUTÓNOMA METROPOLITANA</h1>
@@ -40,9 +40,9 @@
 
             <!--Sección Menú-->
             <nav id="menu_principal">
-                <div class="menu_compacto">
+                <section class="menu_compacto">
                     <img src="imgs/menu_resp.png" width="30" height="30"/>
-		</div>
+		</section>
                 
 		<ul>
                     <!--<li><a href="login.html">Login</a></li>-->
@@ -58,34 +58,34 @@
             </nav>
             <!--Fin Sección Menú-->
             
-            <div id="carrusel">
-                <div class="carrusel">
-                    <div class="product" id="area_computacion">
+            <section id="carrusel">
+                <section class="carrusel">
+                    <section class="product" id="area_computacion">
                         <img class="img_carrusel" src="imgs/computacion.jpg" width="195px" height="100px" />
                         <p>Computación</p>
-                    </div>
+                    </section>
                     
-                    <div class="product" id="area_fisica">
+                    <section class="product" id="area_fisica">
                         <img class="img_carrusel" src="imgs/fisica.jpg" width="195px" height="100px" />
                         <p>Física</p>
-                    </div>
+                    </section>
                     
-                    <div class="product" id="area_matematicas">
+                    <section class="product" id="area_matematicas">
                         <img class="img_carrusel" src="imgs/matematicas.png" width="195px" height="100px" />
                         <p>Matemáticas</p>
-                    </div>
+                    </section>
                     
-                    <div class="product" id="area_quimica">
+                    <section class="product" id="area_quimica">
                         <img class="img_carrusel" src="imgs/quimica.jpg" width="195px" height="100px" />
                         <p>Química</p>
-                    </div>
+                    </section>
                     
-                    <div class="product" id="area_optativas">
+                    <section class="product" id="area_optativas">
                         <img class="img_carrusel" src="imgs/optativas.jpg" width="195px" height="100px" />
                         <p>Optativas</p>
-                    </div>
-                </div>
-        </div>
+                    </section>
+                </section>
+            </section>
 
 	<!--Sección Cuerpo Principal-->
 	<section id="cuerpo_principal">
@@ -100,7 +100,7 @@
             </section>
                 
             <section id="lista_ueas">
-                <table >
+                <table>
                     <tr>
                         <th>Área</th>
                         <th>UEA</th>
@@ -208,6 +208,6 @@
 	</footer>
 	<!--Fin FOOTER-->
         
-        </div>
+        </section>
     </body>
 </html>
