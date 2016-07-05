@@ -46,12 +46,12 @@
                 </div>
                 <ul>
                     <li><a href="index.jsp">Página Principal</a></li>
-                    <li><a href="plantillas/catalogo.jsp">Catálogo UEA's</a></li>
-                    <li><a href="plantillas/libros.jsp">Libros</a></li>
-                    <li><a href="plantillas/videos.jsp">Videos</a></li>
-                    <li><a href="plantillas/documentos.jsp">Documentos</a></li>
-                    <li><a href="plantillas/registro.jsp">Registro</a></li>
-                    <li><a href="plantillas/login.jsp">Login</a></li>
+                    <li><a href="catalogo.jsp">Catálogo UEA's</a></li>
+                    <li><a href="libros.jsp">Libros</a></li>
+                    <li><a href="videos.jsp">Videos</a></li>
+                    <li><a href="documentos.jsp">Documentos</a></li>
+                    <li><a href="registro.jsp">Registro</a></li>
+                    <li><a href="login.jsp">Login</a></li>
                 </ul>
             </nav>
             <!--Fin Sección Menú-->
