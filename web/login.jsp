@@ -14,9 +14,9 @@
 		<title>UAMEDIA</title>
 
 		<!--Códigos Externos-->
-		<link rel="stylesheet" href="../css/default.css">
-		<link rel="stylesheet" href="../css/login.css">
-		<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+		<link rel="stylesheet" href="css/default.css">
+		<link rel="stylesheet" href="css/login.css">
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     </head>
     <body>
         <!--Menú Responsivo-->
@@ -34,7 +34,7 @@
 		<div id="contenedor_gral">
 
 			<header>
-				<img src="../imgs/logo.png"/>
+				<img src="imgs/logo.png"/>
 				<h1>UNIVERSIDAD AUTÓNOMA METROPOLITANA</H1>
 				
 
@@ -45,11 +45,11 @@
 			<!--Sección Menú-->
 			<nav id="menu_principal">
 				<div class="menu_compacto">
-				<img src="../imgs/menu_resp.png" width="30" height="30"/>
+				<img src="imgs/menu_resp.png" width="30" height="30"/>
 				</div>
 				<ul>
 					<li><a href="login.jsp">Login</a></li>
-					<li><a href="../index.jsp">Regresar</a></li>
+					<li><a href="index.jsp">Regresar</a></li>
 					<!--<li><a href="historial.html">Historial Académico</a></li>
 					<li><a href="carga.html">Carga Académica</a></li>
 					<li><a href="prestamos.html">Mis Préstamos</a></li>

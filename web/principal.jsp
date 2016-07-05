@@ -14,11 +14,11 @@
         <title>UAMedia</title>
 
         <!--Códigos Externos-->
-        <link rel="stylesheet" href="../css/default.css">
-        <link rel="stylesheet" href="../css/principal.css">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/principal.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     </head>
     <body>
         <!--Menú Responsivo-->
@@ -33,7 +33,7 @@
 
         <div id="contenedor_gral">
             <header>
-                <img src="../imgs/logo.png"/>
+                <img src="imgs/logo.png"/>
                 <h1>UNIVERSIDAD AUTÓNOMA METROPOLITANA</H1>
 
 
@@ -43,7 +43,7 @@
             <!--Sección Menú-->
             <nav id="menu_principal">
                 <div class="menu_compacto">
-                    <img src="../imgs/menu_resp.png" width="30" height="30"/>
+                    <img src="imgs/menu_resp.png" width="30" height="30"/>
                 </div>
 
                 <ul>
@@ -55,7 +55,7 @@
                     <li><a href="documentos.jsp">Documentos</a></li>
                     <li><a href="perfil.jsp">Mi Perfil</a></li>
                     <li><a href="recurso.jsp">Añadir Recurso</a></li>
-                    <li><a href="../index.jsp">Salir</a></li>
+                    <li><a href="index.jsp">Salir</a></li>
                 </ul>
             </nav>
             <!--Fin Sección Menú-->
@@ -73,7 +73,7 @@
                 <!-- Slides -->
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
-                    <img src="../imgs/quimica.jpg" alt="Química">
+                    <img src="imgs/quimica.jpg" alt="Química">
                     <div class="carousel-caption">
                       <h3>Química</h3>
                       <p class="carousel">Encuentra documentos de química.</p>
@@ -81,7 +81,7 @@
                   </div>
 
                   <div class="item">
-                    <img src="../imgs/fisica.jpg" alt="Física">
+                    <img src="imgs/fisica.jpg" alt="Física">
                     <div class="carousel-caption">
                       <h3>Física</h3>
                       <p class="carousel">Encuentra documentos de física.</p>
@@ -115,7 +115,7 @@
 
                 <a href="#">
                     <li>
-                        <img src="../imgs/vineta_aviso_calendario.gif"/>
+                        <img src="imgs/vineta_aviso_calendario.gif"/>
                         <h1>Generación de Línea de Captura</h1>	
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
@@ -123,7 +123,7 @@
 
                 <a href="#">
                     <li>
-                        <img src="../imgs/vineta_aviso_calendario.gif"/>
+                        <img src="imgs/vineta_aviso_calendario.gif"/>
                         <h1>Vencimiento de un Libro</h1>	
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
@@ -131,7 +131,7 @@
 
                 <a href="#">
                     <li>
-                        <img src="../imgs/vineta_aviso_calendario.gif"/>
+                        <img src="imgs/vineta_aviso_calendario.gif"/>
                         <h1>Semana de Encuesta</h1>	
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
@@ -139,7 +139,7 @@
 
                 <a href="#">
                     <li>
-                        <img src="../imgs/vineta_aviso_calendario.gif"/>
+                        <img src="imgs/vineta_aviso_calendario.gif"/>
                         <h1> Partido de Exhibición Basquetbol</h1>	
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
@@ -147,7 +147,7 @@
 
                 <a href="#">
                     <li>
-                        <img src="../imgs/vineta_aviso_calendario.gif"/>
+                        <img src="imgs/vineta_aviso_calendario.gif"/>
                         <h1>Feria de la Salud</h1>	
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
@@ -155,7 +155,7 @@
 
                 <a href="#">
                     <li>
-                        <img src="../imgs/vineta_aviso_calendario.gif"/>
+                        <img src="imgs/vineta_aviso_calendario.gif"/>
                         <h1>Feria del Libro</h1>	
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
@@ -163,7 +163,7 @@
 
                 <a href="#">
                     <li>
-                        <img src="../imgs/vineta_aviso_calendario.gif"/>
+                        <img src="imgs/vineta_aviso_calendario.gif"/>
                         <h1>Campaña de Vacunación</h1>	
                         <p>Descripcion del Contenido a encontrar</p>
                     </li>
@@ -171,7 +171,7 @@
 
                 <div class="mas">
                     <a href="avisos.html"><b>Más Avisos</b></a>
-                    <a href="avisos.html"><img src="../imgs/flecha_der.png"/></a>
+                    <a href="avisos.html"><img src="imgs/flecha_der.png"/></a>
                 <div>       
             </section>
             <!--Fin Sección Avisos-->

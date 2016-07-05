@@ -15,9 +15,9 @@
         <title>UAMEDIA</title>
 
         <!--Códigos Externos-->
-        <link rel="stylesheet" href="../css/default.css">
-        <link rel="stylesheet" href="../css/catalogo.css">
-        <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/catalogo.css">
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     </head>
     <body>
         <!--Menú Responsivo-->
@@ -41,7 +41,7 @@
             <!--Sección Menú-->
             <nav id="menu_principal">
                 <div class="menu_compacto">
-                    <img src="../imgs/menu_resp.png" width="30" height="30"/>
+                    <img src="imgs/menu_resp.png" width="30" height="30"/>
 		</div>
                 
 		<ul>
@@ -53,7 +53,7 @@
                     <li><a href="documentos.jsp">Documentos</a></li>
                     <li><a href="perfil.jsp">Mi Perfil</a></li>
                     <li><a href="recurso.jsp">Añadir Recurso</a></li>
-                    <li><a href="../index.jsp">Salir</a></li>
+                    <li><a href="index.jsp">Salir</a></li>
 		</ul>
             </nav>
             <!--Fin Sección Menú-->
@@ -61,27 +61,27 @@
             <div id="carrusel">
                 <div class="carrusel">
                     <div class="product" id="area_computacion">
-                        <img class="img_carrusel" src="../imgs/computacion.jpg" width="195px" height="100px" />
+                        <img class="img_carrusel" src="imgs/computacion.jpg" width="195px" height="100px" />
                         <p>Computación</p>
                     </div>
                     
                     <div class="product" id="area_fisica">
-                        <img class="img_carrusel" src="../imgs/fisica.jpg" width="195px" height="100px" />
+                        <img class="img_carrusel" src="imgs/fisica.jpg" width="195px" height="100px" />
                         <p>Física</p>
                     </div>
                     
                     <div class="product" id="area_matematicas">
-                        <img class="img_carrusel" src="../imgs/matematicas.png" width="195px" height="100px" />
+                        <img class="img_carrusel" src="imgs/matematicas.png" width="195px" height="100px" />
                         <p>Matemáticas</p>
                     </div>
                     
                     <div class="product" id="area_quimica">
-                        <img class="img_carrusel" src="../imgs/quimica.jpg" width="195px" height="100px" />
+                        <img class="img_carrusel" src="imgs/quimica.jpg" width="195px" height="100px" />
                         <p>Química</p>
                     </div>
                     
                     <div class="product" id="area_optativas">
-                        <img class="img_carrusel" src="../imgs/optativas.jpg" width="195px" height="100px" />
+                        <img class="img_carrusel" src="imgs/optativas.jpg" width="195px" height="100px" />
                         <p>Optativas</p>
                     </div>
                 </div>
