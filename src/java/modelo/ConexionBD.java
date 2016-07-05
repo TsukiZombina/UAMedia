@@ -6,9 +6,9 @@ import javax.swing.JOptionPane;
 
 public class ConexionBD {
 
-	static public String bd = "uam";
+	static public String bd = "mybd";
 	   static public String login = "root";
-	   static public String password = "behappy";
+	   static public String password = "contraseña";
 	   static public String url = "jdbc:mysql://127.0.0.1:3306/"+bd;
 
 	   //
