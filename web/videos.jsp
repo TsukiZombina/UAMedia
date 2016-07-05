@@ -14,8 +14,8 @@
             <title>UAMEDIA</title>
 
             <!--Códigos Externos-->
-            <link rel="stylesheet" href="../css/default.css">
-            <link rel="stylesheet" href="../css/videos.css">
+            <link rel="stylesheet" href="css/default.css">
+            <link rel="stylesheet" href="css/videos.css">
             <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
     </head>
     <body>
@@ -34,7 +34,7 @@
         <section id="contenedor_gral">
 
             <header>
-                <img src="../imgs/logo.png"/>
+                <img src="imgs/logo.png"/>
                 <h1>UNIVERSIDAD AUTÓNOMA METROPOLITANA</H1>
 
 
@@ -45,7 +45,7 @@
 			<!--Sección Menú-->
             <nav id="menu_principal">
                 <div class="menu_compacto">
-                <img src="../imgs/menu_resp.png" width="30" height="30"/>
+                <img src="imgs/menu_resp.png" width="30" height="30"/>
                 </div>
                 <ul>
                     <!--<li><a href="login.html">Login</a></li>-->
@@ -56,7 +56,7 @@
                     <li><a href="documentos.jsp">Documentos</a></li>
                     <li><a href="perfil.jsp">Mi Perfil</a></li>
                     <li><a href="recurso.jsp">Añadir Recurso</a></li>
-                    <li><a href="../index.jsp">Salir</a></li>
+                    <li><a href="index.jsp">Salir</a></li>
                 </ul>
             </nav>
 			<!--Fin Sección Menú-->
@@ -99,7 +99,7 @@
 
                         <a href="#">
                         <li>                      
-                            <img src="../imgs/vineta_aviso.png"/>
+                            <img src="imgs/vineta_aviso.png"/>
                             <h1>Video</h1>	
                             <p>Descripcion</p>
                         </li>
@@ -107,7 +107,7 @@
 
                         <a href="#">
                             <li>
-                                <img src="../imgs/vineta_aviso.png"/>
+                                <img src="imgs/vineta_aviso.png"/>
                                 <h1>Video 1</h1>	
                                 <p>Descripcion</p>
                             </li>
@@ -115,7 +115,7 @@
 
                         <a href="#">
                             <li>
-                                <img src="../imgs/vineta_aviso.png"/>
+                                <img src="imgs/vineta_aviso.png"/>
                                 <h1>Video 2</h1>	
                                 <p>Descripcion</p>
                             </li>
@@ -123,7 +123,7 @@
 
                         <a href="#">
                             <li>
-                                <img src="../imgs/vineta_aviso.png"/>
+                                <img src="imgs/vineta_aviso.png"/>
                                 <h1>Video 3</h1>	
                                 <p>Descripcion</p>
                             </li>
@@ -131,7 +131,7 @@
 
                         <a href="#">
                             <li>
-                                <img src="../imgs/vineta_aviso.png"/>
+                                <img src="imgs/vineta_aviso.png"/>
                                 <h1>Video 4</h1>	
                                 <p>Descripcion</p>
                             </li>
