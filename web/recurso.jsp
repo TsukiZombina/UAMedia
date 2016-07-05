@@ -103,13 +103,6 @@
                         <option value="Programación Orientada a Objetos">Programación Orientada a Objetos</option>
                         <option value="Programación Orientada a Eventos">Programación Orientada a Eventos</option>
                     </select>
-
-                <h3>División</h3>
-                    <select name="división">
-                        <option>CSH</option>
-                        <option>CyAD</option>
-                        <option>CBI</option>
-                    </select>
                 
                 <h3>Autor/es</h3>
                 <h1><input type="text" name="autor" placeholder="autor(es)"></h1>
