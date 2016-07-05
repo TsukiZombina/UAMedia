@@ -23,7 +23,7 @@ public class RecursoDAO {
                     if(con!=null){
                         Statement st;
                         st = con.createStatement();
-                        st.executeUpdate("INSERT INTO mydb.recurso(`nombreRecurso`,`descripcionRecurso`,`url`) VALUES ('"+unRecurso.getNombre()+"','"+unRecurso.getDescripcion()+"','"+unRecurso.getUrl()+"')");
+                        st.executeUpdate("INSERT INTO mydb.Recurso(`nombreRecurso`,`descripcionRecurso`,`url`) VALUES ('"+unRecurso.getNombre()+"','"+unRecurso.getDescripcion()+"','"+unRecurso.getUrl()+"')");
                         agregado=true;
                         st.close();
                     }
