@@ -45,14 +45,14 @@
                 </div>
 
                 <ul>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="login.jsp">Login</a></li>
                     <!--<li><a href="principal.html">Página Principal</a></li>
                     <li><a href="historial.html">Historial Académico</a></li>
                     <li><a href="carga.html">Carga Académica</a></li>
                     <li><a href="prestamos.html">Mis Préstamos</a></li>
                     <li><a href="avisos.html">Avisos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>-->
-                    <li><a href="../index.html">Regresar</a></li>
+                    <li><a href="index.jsp">Regresar</a></li>
                 </ul>
             </nav>
             <!--Fin Sección Menú-->
@@ -70,7 +70,7 @@
                     <h1>        
                         <form action="">
                           <input type="radio" name="genero" value="male">Masculino<br>
-                          <input type="radio" name="genero" value="female">Femenino<br>
+                          <input class="derecha" type="radio" name="genero" value="female">Femenino<br>
                         </form>
                     </h1>
 
@@ -85,24 +85,6 @@
                     <b>Matrícula:</b><h1><input type="text" name="matricula" value="matricula"></h1>
 
                     <b>Correo:</b><h1><input type="text" name="correo" value="correo@compañía.com"></h1>
-
-                    <b>Unidad UAM:</b>
-                    <h1>
-                        <select name="división">
-                            <option>Azcapotzalco</option>
-                            <option>Cuajimalpa</option>
-                            <option>Xochimilco</option>
-                        </select>
-                    </h1>
-
-                    <b>División:</b>
-                    <h1>
-                        <select name="división">
-                            <option>CSH</option>
-                            <option>CyAD</option>
-                            <option>CBI</option>
-                        </select>
-                    </h1>
 
                     <b>Carrera:</b>
                     <h1>
