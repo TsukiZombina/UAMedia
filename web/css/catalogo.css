@@ -1,7 +1,7 @@
 #ordena_ueas
 {
-	margin-top: 20px;
-	margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 #carrusel
 {
@@ -21,7 +21,7 @@
     position:absolute;
     z-index:0
 }
-.carrusel>div
+.carrusel>section
 {
     float: left;
     height: 130px;
