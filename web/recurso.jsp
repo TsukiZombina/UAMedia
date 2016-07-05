@@ -1,140 +1,180 @@
-<%-- 
-    Document   : registro
-    Created on : 25/06/2016, 07:43:16 PM
-    Author     : Luis Toral
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = "utf-8"/>
-        <meta keywords = "UAMEDIA, repositorio, gestor de contenidos, plataforma de contenidos"/>
-        <meta description = "Gestor de contenidos proporcionados por alumnos y acadÃ©micos para las UEA's"/>
-        <title>UAMEDIA</title>
+<html lang="es">
+	<head>
+		<meta charset = "utf-8"/>
+		<meta keywords = "Sistema Información UAM, Kardex UAM"/>
+		<meta description = "Modulo de información del alumno"/>
+		<title>Módulo de información</title>
 
-        <!--CÃ³digos Externos-->
-        <link rel="stylesheet" href="css/default.css">
-        <link rel="stylesheet" href="css/registro.css">
-        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    </head>
-    <body>
-        <!--MenÃº Responsivo-->
-        <script type="text/javascript">
-                $(document).ready(function(){
-                        $('.menu_compacto').click(function(){
-                                $('#menu_principal > ul').slideToggle(1500);
-                        });
-                        });
-        </script>
-        <!--Fin-->
+		<!--Códigos Externos-->
+		<link rel="stylesheet" href="css/default.css">
+		<link rel="stylesheet" href="css/recurso.css">
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	</head>
 
 
-        <div id="contenedor_gral">
+	<body>
+		<!--Menú Responsivo-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.menu_compacto').click(function(){
+					$('#menu_principal > ul').slideToggle(1500);					
+				});
+				});
+                                
+                     //   alert(document.getElementById('tema').options[posicion].text); //valor
+                        var tema=document.getElementById("tema").value;
+                        
+                        var materia=document.getElementById("materia").value;
+                        var tipoRecurso=document.getElementById("tipoRecurso").value;
+                        
+                        new Date().toJSON().slice(0,10);
 
-            <header>
-                <img src="../imgs/logo.png"/>
-                <h1>UNIVERSIDAD AUTÃ“NOMA METROPOLITANA</H1>
-                <h2>UAMEDIA - Repositorio de contenidos UEA's</h2>
-            </header>
+                        
+                    //    alert(document.getElementById('materia').options[posicion].text);
+                     //   alert(document.getElementById('tipoRecurso').options[posicion].text); //valor
+                        
 
-
-            <!--SecciÃ³n MenÃº-->
-            <nav id="menu_principal">
-                <div class="menu_compacto">
-                    <img src="../imgs/menu_resp.png" width="30" height="30"/>
-                </div>
-
-                <ul>
-                    <li><a href="login.jsp">Login</a></li>
-                    <!--<li><a href="principal.html">PÃ¡gina Principal</a></li>
-                    <li><a href="historial.html">Historial AcadÃ©mico</a></li>
-                    <li><a href="carga.html">Carga AcadÃ©mica</a></li>
-                    <li><a href="prestamos.html">Mis PrÃ©stamos</a></li>
-                    <li><a href="avisos.html">Avisos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>-->
-                    <li><a href="../index.jsp">Regresar</a></li>
-                </ul>
-            </nav>
-            <!--Fin SecciÃ³n MenÃº-->
+		</script>
+		<!--Fin-->
 
 
-            <!--SecciÃ³n Cuerpo Principal-->
-            <section id="cuerpo_principal">
 
-                <h1>Registrar nuevo usuario</h1>
+		<div id="contenedor_gral">
 
-                <section id="contacto">
-                    <b>Nombre completo:</b>
-                    <h1><input type="text" name="nombre" value="Nombre"></h1>
-                    <b>Sexo:</b>
-                    <h1>        
-                        <form action="">
-                          <input type="radio" name="genero" value="male">Masculino<br>
-                          <input type="radio" name="genero" value="female">Femenino<br>
-                        </form>
-                    </h1>
+			<header>
+				<img src="imgs/logo.png"/>
+				<h1>UNIVERSIDAD AUTÓNOMA METROPOLITANA</H1>
+				
 
-                    <b>Fecha de nacimiento:</b>
-                    <h1>
-                        <br>
-                        <input type="date" name="fecha">
-                    </h1>
-                    <br><br>
+				<h2>UAMEDIA - Repositorio de contenidos UEA's</h2>
+			</header>
 
-                    <b>Nick:</b><h1><input type="text" name="nick" value="nick"></h1>
-                    <b>MatrÃ­cula:</b><h1><input type="text" name="matricula" value="matricula"></h1>
 
-                    <b>Correo:</b><h1><input type="text" name="correo" value="correo@compaÃ±Ã­a.com"></h1>
+			<!--Sección Menú-->
+			<nav id="menu_principal">
+				<div class="menu_compacto">
+				<img src="imgs/menu_resp.png" width="30" height="30"/>
+				</div>
+				<ul>
+					<!--<li><a href="login.html">Login</a></li>-->
+					<li><a href="principal.html">Página Principal</a></li>
+                    
+					<li><a href="catalogo.html">Catálogo UEA's</a></li>
+					<li><a href="libros.html">Libros</a></li>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="documentos.html">Documentos</a></li>
+					<li><a href="perfil.html">Mi Perfil</a></li>
+					<li><a href="recurso.html">Añadir Recurso</a></li>
+					<li><a href="index.html">Salir</a></li>
+				</ul>
+			</nav>
+			<!--Fin Sección Menú-->
 
-                    <b>Unidad UAM:</b>
-                    <h1>
-                        <select name="divisiÃ³n">
-                            <option>Azcapotzalco</option>
-                            <option>Cuajimalpa</option>
-                            <option>Xochimilco</option>
-                        </select>
-                    </h1>
 
-                    <b>DivisiÃ³n:</b>
-                    <h1>
-                        <select name="divisiÃ³n">
-                            <option>CSH</option>
-                            <option>CyAD</option>
-                            <option>CBI</option>
-                        </select>
-                    </h1>
+			<!--Sección Cuerpo Principal-->
+			<section id="cuerpo_principal">
 
-                    <b>Carrera:</b>
-                    <h1>
-                        <select name="divisiÃ³n">
-                            <option>Ing. ComputaciÃ³n</option>
-                            <option>Ing. ElectrÃ³nica</option>
-                            <option>Ing. FÃ­sica</option>
-                        </select>
-                    </h1>
+			<h1>Compartir un nuevo recurso con la comunidad</h1>
 
-                    <b>Ingresa contraseÃ±a:</b>
-                    <h1><input type="password" name="pass" value="pass"></h1>
-                    <b>Repite contraseÃ±a:</b>
-                    <h1><input type="password" name="passR" value="passR"></h1>
 
-                    <div id="boton1">
-                        <input type="submit" value="Limpiar">
-                    </div>
+        <section class="DescripcionRecurso">
+                <h2>Detalles del recurso</h2>
+                <form action="ServletAñadirRecurso" method="post">
+                <h3>Título</h3>
+                <h1><input type="text" name="titulo" placeholder="Ingresa el título del recurso"></h1>
+            
+                <h3>Descripción</h3>
+                    <h1><textarea name="descripcion" placeholder="Agrega una breve descripción"></textarea></h1>
+            
+                
+                    <h3>Tema General</h3>
+                    <select name="tema">
+                        <option value="Programación">Programación</option>
+                        <option value="Física">Física</option>
+                        <option value="Matemáticas">Matemáticas</option>
+                        <option value="Química">Química</option>
+                    </select>
+                    
+                    
+                    <h3>Materia</h3>
+                    <select name="materia">
+                        <option value="Programación Estructurada">Programación Estructurada</option>
+                        <option value="Programación Orientada a Objetos">Programación Orientada a Objetos</option>
+                        <option value="Programación Orientada a Eventos">Programación Orientada a Eventos</option>
+                    </select>
 
-                    <div id="boton2">
-                        <input type="submit" value="Registrar">
-                    </div>
-                </section>
-            </section>
-            <!--Fin SecciÃ³n Cuerpo Principal-->
+                <h3>División</h3>
+                    <select name="división">
+                        <option>CSH</option>
+                        <option>CyAD</option>
+                        <option>CBI</option>
+                    </select>
+                
+                <h3>Autor/es</h3>
+                <h1><input type="text" name="autor" placeholder="autor(es)"></h1>
+            
+                <h3>Tipo Recurso</h3>
+                    <select name="tipoRecurso">
+                        <option value="Video">Video</option>
+                        <option value="Audio">Audio</option>
+                        <option value="Documento">Documento</option>
+                        <option value="Libro">Libro</option>
+                        <option value="Recurso Externo">Recurso Externo</option>
+                        <option value="Audio">Audio</option>
+                        <option value="Apuntes">Apuntes</option>
+                        <option value="Diapositivas">Diapositivas</option>      
+                    </select>
 
-            <!--FOOTER-->
-            <footer>
-                    <h1>Gestor de contenidos de UEA's proporcionados por alumnos y acadÃ©micos<h1>
-            </footer>
-            <!--Fin FOOTER-->
-        </div>
-    </body>
+            
+                <h3>Enlace del recurso/video</h3>
+                <h1><input type="url" name="enlaceExterno" placeholder="Ingresa URL del recurso externo"></h1>
+
+                    
+            
+            <table id="tablaBoton">
+                <tr>
+                    <td></td>
+                    <td> 
+                        <h3>o</h3>
+                    </td>
+                    <td></td>
+                </tr>     
+                <tr>
+                    <td></td>
+                    <td> 
+                        <div id="botonSubirRecurso">
+                        <input type="file" name="Cargar un archivo">
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>            
+            </table>
+         
+
+            
+            <div id="botonCompartir">
+                    <input type="submit" value="Compartir Recurso">
+					</div>
+
+</form>
+				
+                
+           
+           </section>
+            
+		   </section>
+			<!--Fin Sección Cuerpo Principal-->
+
+
+
+
+			<!--FOOTER-->
+			<footer>
+				<h1>Gestor de contenidos de UEA's proporcionados por alumnos y académicos<h1>
+			</footer>
+			<!--Fin FOOTER-->
+
+		</div
+	></body>
 </html>

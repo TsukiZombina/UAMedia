@@ -72,14 +72,13 @@
                           <input type="radio" name="genero" value="male">Masculino<br>
                           <input class="derecha" type="radio" name="genero" value="female">Femenino<br>
                         </form>
-                    </h1>
+                    </h1><br>
 
                     <b>Fecha de nacimiento:</b>
                     <h1>
-                        <br>
                         <input type="date" name="fecha">
                     </h1>
-                    <br><br>
+                   
 
                     <b>Nick:</b><h1><input type="text" name="nick" value="nick"></h1>
                     <b>Matrícula:</b><h1><input type="text" name="matricula" value="matricula"></h1>
