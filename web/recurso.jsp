@@ -57,16 +57,16 @@
 				<img src="imgs/menu_resp.png" width="30" height="30"/>
 				</div>
 				<ul>
-					<!--<li><a href="login.html">Login</a></li>-->
-					<li><a href="principal.jsp">Página Principal</a></li>
-                    
-					<li><a href="catalogo.jsp">Catálogo UEA's</a></li>
-					<li><a href="libros.jsp">Libros</a></li>
-					<li><a href="videos.jsp">Videos</a></li>
-					<li><a href="documentos.jsp">Documentos</a></li>
-					<li><a href="perfil.jsp">Mi Perfil</a></li>
-					<li><a href="recurso.jsp">Añadir Recurso</a></li>
-					<li><a href="index.jsp">Salir</a></li>
+                                    <!--<li><a href="login.html">Login</a></li>-->
+                                    <li><a href="principal.jsp">Página Principal</a></li>
+
+                                    <li><a href="catalogo.jsp">Catálogo UEA's</a></li>
+                                    <li><a href="libros.jsp">Libros</a></li>
+                                    <li><a href="videos.jsp">Videos</a></li>
+                                    <li><a href="documentos.jsp">Documentos</a></li>
+                                    <li><a href="perfil.jsp">Mi Perfil</a></li>
+                                    <li><a href="recurso.jsp">Añadir Recurso</a></li>
+                                    <li><a href="index.jsp">Salir</a></li>
 				</ul>
 			</nav>
 			<!--Fin Sección Menú-->
