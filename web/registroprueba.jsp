@@ -1,35 +1,62 @@
 <%-- 
-    Document   : index
-    Created on : 20-jun-2016, 17:12:44
-    Author     : Profesor
+    Document   : registro
+    Created on : 25/06/2016, 07:43:16 PM
+    Author     : Luis Toral
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Página Web para el Sistema Control Escolar de la UAM </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "utf-8"/>
+        <meta keywords = "UAMEDIA, repositorio, gestor de contenidos, plataforma de contenidos"/>
+        <meta description = "Gestor de contenidos proporcionados por alumnos y académicos para las UEA's"/>
+        <title>UAMEDIA</title>
 
-       <link href="css/estilos.css" rel="stylesheet" type="text/css"> 
-        
-      
+        <!--Códigos Externos-->
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/registro.css">
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     </head>
     <body>
-       <header><h1>Sistema administrador del catálogo de alumnos</h1> </header>
-       <nav> 
-       <h2> Alumnos->registro </h2>
-       </nav>
-       <aside>
-           <p>Espacio publicitario</p>
-           <br> <br>
-            <img src="http://distriplas.com/assets/uploads/files/af9e5-publicidad3.jpg" />
-       </aside>
-        <section>
-        <article> 
-            <h1> Registro de alumnos </h1>   
-            <form action="ServletRegistroAlumno" method="post">
+        <!--Menú Responsivo-->
+        <script type="text/javascript">
+                $(document).ready(function(){
+                        $('.menu_compacto').click(function(){
+                                $('#menu_principal > ul').slideToggle(1500);
+                        });
+                        });
+        </script>
+        <!--Fin-->
+
+
+
+        <div id="contenedor_gral">
+            <header>
+                <img src="imgs/logo.png"/>
+                <h1>UNIVERSIDAD AUTÓNOMA METROPOLITANA</H1>
+                <h2>UAMEDIA - Repositorio de contenidos UEA's</h2>
+            </header>
+
+
+            <!--Sección Menú-->
+            <nav id="menu_principal">
+                <div class="menu_compacto">
+                    <img src="imgs/menu_resp.png" width="30" height="30"/>
+                </div>
+                <ul>
+                    <li><a href="login.jsp">Login</a></li>
+                    <li><a href="index.jsp">Regresar</a></li>
+                </ul>
+            </nav>
+            <!--Fin Sección Menú-->
+
+
+            <!--Sección Cuerpo Principal-->
+            <section id="cuerpo_principal">
+
+                <h1>Registrar nuevo usuario</h1>
+                <form action="ServletRegistroAlumno" method="post">
                 <table>
                     <tr>
                         <td>Matricula </td>
@@ -40,6 +67,10 @@
                         <td><input type="text" size="20" name="nombre"></td>
                     </tr>
                     <tr>
+                        <td>Apellidos </td>
+                        <td><input type="text" size="20" name="apellidos"></td>
+                    </tr>
+                    <tr>
                     <td>Correo </td>
                         <td><input type="text" size="20" name="correo"></td>
                     </tr>
@@ -48,34 +79,19 @@
                         <td><input type="text" size="20" name="carrera"></td>
                     </tr>
                     <tr>
-                        <td>Sexo</td>
-                        <td><input type="text" size="20" name="sexo"></td>
-                    </tr>
-                    <tr>
-                        <td>Nick</td>
-                        <td><input type="text" size="20" name="nick"></td>
-                    </tr>
-                    <tr>
-                        <td>Fecha</td>
-                        <td><input type="text" size="20" name="fecha"></td>
-                    </tr>
-                    <tr>
-                        <td>Contraseña</td>
-                        <td><input type="text" size="20" name="contrasena"></td>
-                    </tr>
-                    <tr>
-                        <td>Reescriba la contraseña</td>
-                        <td><input type="text" size="20" name="rcontrasena"></td>
-                    </tr>
-
-                    <tr>
                         <td colspan="2" align="center"> <input type="submit" value="Guardar alumno"></td>
                     </tr>
                  </table>
             </form>
-        </article>  
-       </section>
-        <br>
-        <footer> Derechos reservados para...</footer>
+            </section>
+                <!--Fin Sección Cuerpo Principal-->
+
+            <!--FOOTER-->
+            <footer>
+                    <h1>Gestor de contenidos de UEA's proporcionados por alumnos y académicos<h1>
+            </footer>
+            <!--Fin FOOTER-->
+
+        </div>
     </body>
 </html>
