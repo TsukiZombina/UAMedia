@@ -12,6 +12,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.JOptionPane;
+
+import modelo.CatalogoDAO;
+import modelo.CatalogoVO;
 
 /**
  *
@@ -19,7 +23,11 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "ServletCatalogo", urlPatterns = {"/ServletCatalogo"})
 public class ServletCatalogo extends HttpServlet {
-
+    private static final long serialVersionUID = 1L;
+    
+    public ServletCatalogo() {
+        // TODO Auto-generated constructor stub
+    }
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -34,13 +42,13 @@ public class ServletCatalogo extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
+           out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet ServletCatalogo</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Respuesta desde el servlet</h1>");
+            out.println("<h1>Respuesta del Servlet</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -58,7 +66,7 @@ public class ServletCatalogo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+    //    processRequest(request, response);
     }
 
     /**
@@ -73,6 +81,30 @@ public class ServletCatalogo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        
+        response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("UTF-8");
+        
+        String area=request.getParameter("area");	
+        String uea=request.getParameter("uea");
+	String nombreUea=request.getParameter("nombreUea");
+        String archivos=request.getParameter("archivos");
+        
+        //CatalogoVO verCatalogo=new CatalogoVO(area, uea, nombreUea, archivos);
+        //boolean respuesta=CatalogoDAO.consultarCatalogo(verCatalogo);
+           
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet ServletCatalogo</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Respuesta desde el servlet</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
     }
 
     /**
@@ -82,7 +114,7 @@ public class ServletCatalogo extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Short description";
+        return "Servlet que ordena el catalogo de UEAs";
     }// </editor-fold>
 
 }
