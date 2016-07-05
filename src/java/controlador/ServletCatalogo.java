@@ -40,7 +40,7 @@ public class ServletCatalogo extends HttpServlet {
             out.println("<title>Servlet ServletCatalogo</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ServletCatalogo at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Respuesta desde el servlet</h1>");
             out.println("</body>");
             out.println("</html>");
         }

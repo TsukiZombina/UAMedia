@@ -92,11 +92,14 @@
             <h1>Catálogo de UEA's</h1>
             <section id="ordena_ueas">
             <h2>Ordenar por: </h2>
+            <form action="ServletCatalogo">
                 <select name="ordena_ueas">
                     <option value="1">Área</option>
                     <option value="2">UEA</option> 
-                   <option value="3">Nombre de la UEA</option>                
+                   <option value="3">Nombre de la UEA</option> 
+                   <input type="submit" name="Ordenar"/>
                 </select>
+            </form>
             </section>
                 
             <section id="lista_ueas">
