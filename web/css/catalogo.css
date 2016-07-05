@@ -1,74 +1,91 @@
-#ordena_ueas{
+#ordena_ueas
+{
 	margin-top: 20px;
 	margin-bottom: 40px;
 }
-
-#carrusel{float:left; width:1500px; overflow:hidden; height:155px; position:relative; margin-top:20px;}
+#carrusel
+{
+    float:left;
+    width:1500px;
+    overflow:hidden;
+    height:155px;
+    position:relative;
+    margin-top:20px
+}
 /*prueba para commit y push*/
 /*segunda prueba para commit y push*/
-/*#carrusel .flecha_izquierda{position:absolute; left:10px; z-index:1; top:50%; margin-top:-9px;}
-#carrusel .flecha_derecha{position:absolute; right:10px; z-index:1; top:50%; margin-top:-9px;}*/
-.carrusel{width:1500px;left:150px; position:absolute; z-index:0}
-.carrusel>div{
+.carrusel
+{
+    width:1500px;
+    left:150px;
+    position:absolute;
+    z-index:0
+}
+.carrusel>div
+{
     float: left;
     height: 130px;
     margin-right: 5px;
     width: 195px;
     text-align:center;
 }
-.carrusel .img_carrusel{cursor:pointer;}
-#content {
+.carrusel .img_carrusel
+{
+    cursor:pointer;
+}
+#content
+{
     float:left;
     width:600px;
     margin-bottom:40px;
     margin:0px auto;
     border-radius: 8px;
 }
-.product {
+.product
+{
     border:#CCCCCC 1px solid;
 }
-
-
-#ordena_ueas select{
-	float:left;
+#ordena_ueas select
+{
+    float:left;
     margin-left: 25px;
-	position: absolute;
-	margin-top: 10px;
+    position: absolute;
+    margin-top: 10px;
+}
+#lista_ueas  table th
+{
+    border-left: 1px solid #640923;
+    height:30px;
+    background-color:#640923;
+    color:#FFFFFF;
+    padding: 3px;
+}
+#lista_ueas table
+{
+    width: auto;
+}
+#lista_ueas table
+{
+    min-width: 350px;
+    margin-left: 230px;
+    width: auto;
+    margin-right: 20px;
+}
+#lista_ueas  table tr:nth-child(even)
+{
+    background: #d7d8da;
 }
 
-#lista_ueas  table th{
-	border-left: 1px solid #640923;
-	height:30px;
-	background-color:#640923;
-	color:#FFFFFF;
-	padding: 3px;
+#lista_ueas  table tr:nth-child(even) td
+{
+    color: #000000;
 }
-
-#lista_ueas table{
-	width: auto;
+#lista_ueas  table tr:nth-child(odd)
+{
+    background: #FFFFFF;
 }
-
-#lista_ueas table{
-	min-width: 350px;
-	margin-left: 230px;
-	width: auto;
-	margin-right: 20px;
-}
-
-#lista_ueas  table tr:nth-child(even){
-background: #d7d8da;
-}
-
-#lista_ueas  table tr:nth-child(even) td{
-color: #000000;
-}
-
-#lista_ueas  table tr:nth-child(odd){
-background: #FFFFFF;
-}
-
 /*Propiedades de los td de filas impares*/
-#lista_ueas  table tr:nth-child(odd) td{
-color: #494949;
+#lista_ueas  table tr:nth-child(odd) td
+{
+    color: #494949;
 }
-

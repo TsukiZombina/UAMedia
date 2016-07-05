@@ -33,7 +33,7 @@
 	<!--Fin-->
         <section id="contenedor_gral">
             <header>
-                <img src="../imgs/logo.png"/>
+                <img src="imgs/logo.png"/>
 		<h1>UNIVERSIDAD AUTÓNOMA METROPOLITANA</h1>
 		<h2>UAMEDIA - Repositorio de contenidos UEA's</h2>
             </header>
