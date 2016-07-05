@@ -73,26 +73,24 @@
 						<tr>
 							<th>Usuario:</th>
 							<td><p>rortega</p></td>
-                            <th>Rol:</th>
+                                                        <th>Rol:</th>
 							<td><p>Estudiante</p></td>
 						</tr>
 						<tr>
 							<th>Carrera:</th>
 							<td><p>Ingeniería en Computación</p></td>
 							<th>División:</th>
-                            <td><p>Ciencias Básicas e Ingeniería</p></td>
+                                                        <td><p>Ciencias Básicas e Ingeniería</p></td>
 						</tr>
 						<tr>
 							<th>UEA's:</th>
 							<td><p>4</p></td>
 							<th>Contribuciones:</th>
-                            <td><p>12</p></td>
+                                                        <td><p>12</p></td>
 						</tr>
 						<tr>
 							<th>Comentarios:</th>
 							<td><p>6</p></td>
-							<th>Foros:</th>
-                            <td><p>2</p></td>
 						</tr>
 					</tbody>
 				</table>
