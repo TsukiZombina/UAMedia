@@ -1,16 +1,27 @@
+#contenedor_gral
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#cuerpo_principal
+{
+    margin-top: 170px;
+    margin-bottom: 5px;
+}
 #ordena_ueas
 {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
 }
 #carrusel
 {
     float:left;
-    width:1500px;
+    width:1400px;
     overflow:hidden;
     height:155px;
-    position:relative;
-    margin-top:20px
+    position:absolute;
+    margin-top:25px;
 }
 /*prueba para commit y push*/
 /*segunda prueba para commit y push*/
@@ -48,13 +59,13 @@
 #ordena_ueas select
 {
     float:left;
-    margin-left: 25px;
-    position: absolute;
-    margin-top: 10px;
+    margin-left: 20px;
+    position: relative;
+    margin-top: 5px;
 }
 #lista_ueas  table th
 {
-    border-left: 1px solid #640923;
+    border-left: 5px solid #640923;
     height:30px;
     background-color:#640923;
     color:#FFFFFF;
@@ -63,13 +74,16 @@
 #lista_ueas table
 {
     width: auto;
+    position:absolute;
+    top: 370px;
+    left: 75px;
 }
 #lista_ueas table
 {
     min-width: 350px;
     margin-left: 230px;
-    width: auto;
     margin-right: 20px;
+    width: auto;
 }
 #lista_ueas  table tr:nth-child(even)
 {
