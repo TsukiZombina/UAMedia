@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package modelo;
-​
+
 /**
  *
  * @author Horowitz
@@ -29,70 +29,68 @@ public class AñadirRecursoVO {
     this.enlace = enlace;
     this.fecha = fecha;         
     }
-​
+
     public String getTema() {
         return tema;
     }
-​
+    
     public void setTema(String tema) {
         this.tema = tema;
     }
-​
+    
     public String getMateria() {
         return materia;
     }
-​
+    
     public void setMateria(String materia) {
         this.materia = materia;
     }
-​
+    
     public String getAutor() {
         return autor;
     }
-​
+    
     public void setAutor(String autor) {
         this.autor = autor;
     }
-​
+    
     public String getTipoRecurso() {
         return tipoRecurso;
     }
-​
+    
     public void setTipoRecurso(String tipoRecurso) {
         this.tipoRecurso = tipoRecurso;
     }
-​
+    
     public String getEnlace() {
         return enlace;
     }
-​
+    
     public void setEnlace(String enlace) {
         this.enlace = enlace;
     }
-​
+
     public String getFecha() {
         return fecha;
     }
-​
+
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
-​
+
     public String getNombreRecurso() {
         return nombreRecurso;
     }
-​
+
     public void setNombreRecurso(String nombreRecurso) {
         this.nombreRecurso = nombreRecurso;
     }
-​
+
     public String getDescripcionRecurso() {
         return descripcionRecurso;
     }
-​
+
     public void setDescripcionRecurso(String descripcionRecurso) {
         this.descripcionRecurso = descripcionRecurso;
-    }
-    
-    
+    }   
 }

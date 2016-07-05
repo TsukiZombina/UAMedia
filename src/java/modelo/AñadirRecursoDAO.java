@@ -4,17 +4,17 @@
  * and open the template in the editor.
  */
 package modelo;
-​
+
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
-​
+
 /**
  *
  * @author Horowitz
  */
 public class AñadirRecursoDAO {
-​
+
     public static boolean agregarRecurso(AñadirRecursoVO unNuevoRecurso) {
         
         boolean agregado=false;
@@ -35,6 +35,5 @@ public class AñadirRecursoDAO {
 			e.printStackTrace();
 		}
 		return agregado;      
-    }
-    
+    }  
 }
