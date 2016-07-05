@@ -31,15 +31,18 @@ public class ServletRegistro extends HttpServlet {
                 response.setContentType("text/html;charset=UTF-8");
                 request.setCharacterEncoding("UTF-8");
         
-                String matricula=request.getParameter("matricula");	
+                String id=request.getParameter("id");	
                 String nombre=request.getParameter("nombre");
-		String apellidos=request.getParameter("apellidos");
 		String correo=request.getParameter("correo");
+                String sexo=request.getParameter("sexo");
+                String fechaDeNacimiento=request.getParameter("fecha");
+                String rol=request.getParameter("rol");
+                String uEA=request.getParameter("uea");
 		String carrera=request.getParameter("carrera");
                 
-	        AutorVO unAutor=new AutorVO(matricula, nombre, apellidos, correo, carrera);
+	        AutorVO unAutor=new AutorVO(id, nombre, correo, sexo, fechaDeNacimiento, rol, uEA, carrera);
 			boolean respuesta=AutorDAO.agregarAutor(unAutor);
-                        if(!matricula.isEmpty()){
+                        if(!id.isEmpty()){
                             if(respuesta){
                                     request.getRequestDispatcher("mensajeOK.jsp").forward(request, response);
                             }else{
