@@ -199,5 +199,6 @@ iframe{
 ​
 	#cuerpo_principal h1{
 		font-size: 20px;
+                position: absolute;
 	}
 }
