@@ -46,12 +46,12 @@
 
                 <ul>
                     <li><a href="login.jsp">Login</a></li>
-                    <!--<li><a href="principal.html">Página Principal</a></li>
+                    <li><a href="principal.html">Página Principal</a></li>
                     <li><a href="historial.html">Historial Académico</a></li>
                     <li><a href="carga.html">Carga Académica</a></li>
                     <li><a href="prestamos.html">Mis Préstamos</a></li>
                     <li><a href="avisos.html">Avisos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>-->
+                    <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="index.jsp">Regresar</a></li>
                 </ul>
             </nav>
