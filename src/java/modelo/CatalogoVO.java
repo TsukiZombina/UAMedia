@@ -23,28 +23,29 @@ public class CatalogoVO {
     public String getArea () {
         return area;
     }
-    public String setArea (String area) {
+    public void setArea (String area) {
         this.area = area;
     }
+    
     public String getUea () {
         return uea;
     }
-    public String setUea (String uea){
+    
+    public void setUea (String uea){
         this.uea = uea;
     }
     
     public String getNombreUea () {
         return nombreUea;
     }
-    public String setNombreUea (String nombreUea) {
+    public void setNombreUea (String nombreUea) {
         this.nombreUea = nombreUea;
     }
     
     public int getArchivos () {
         return archivos;
     }
-    public int setArchivos (int archivos) {
+    public void setArchivos (int archivos) {
         this.archivos = archivos;
     }
-
 }
