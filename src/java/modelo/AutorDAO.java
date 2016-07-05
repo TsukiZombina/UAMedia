@@ -13,11 +13,11 @@ public class AutorDAO {
         ConexionBD c=new ConexionBD();
         Connection con=c.getConexion();
             if(con!=null){
-                    Statement st;
-                    st = con.createStatement();
-                    st.executeUpdate("INSERT INTO alumno(`matricula`,`nombre`,`apellidos`, `correo`,`carrera`) VALUES ('"+unAutor.getMatricula()+"','"+unAutor.getNombre()+"','"+unAutor.getApellidos()+"','"+unAutor.getCorreo()+"','"+unAutor.getCarrera()+"')");
-                    agregado=true;
-                    st.close();
+                Statement st;
+                st = con.createStatement();
+                st.executeUpdate("INSERT INTO alumno(`matricula`,`nombre`,`apellidos`, `correo`,`carrera`) VALUES ('"+unAutor.getMatricula()+"','"+unAutor.getNombre()+"','"+unAutor.getApellidos()+"','"+unAutor.getCorreo()+"','"+unAutor.getCarrera()+"')");
+                agregado=true;
+                st.close();
             }
         c.cerrarConexion();
         } catch (SQLException e) {
