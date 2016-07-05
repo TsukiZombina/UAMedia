@@ -40,23 +40,35 @@
 	width: 350px;
 }
 
-#contacto form{
+#contacto input.derecha {
+        float: right;
+	font-size: 19px;
+	border-radius:9px;
+	background-color: #FFFFFF;
+	color:#707070;
+	font-style: italic;
+	height: 30px;
+	text-align: center;
+	margin-left: 130px;
+	margin-right: auto;
+	width: 350px;
+}
 
+#contacto form{
     margin-left: 0px;
 }
 
 #contacto form input{
-	width: 30px;
+    width: 30px;
 }
 
 #contacto select{
-	margin-left: 200px;
+    margin-left: 200px;
     width: 200px;
 }
 
 /*
 #contacto textarea{
-
 	font-size: 19px;
 	border-radius:5px;
 	background-color: #FFFFFF;
@@ -78,9 +90,8 @@
 	text-align: center;
 	font-style: normal;
 	width: 150px;
-	
-    margin-left: 5px;
-    margin-top: 5px;
+        margin-left: 5px;
+        margin-top: 5px;
 	height: 40px;
 }
 
