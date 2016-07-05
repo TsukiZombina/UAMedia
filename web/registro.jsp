@@ -1,30 +1,33 @@
+<%-- 
+    Document   : registro
+    Created on : 25/06/2016, 07:43:16 PM
+    Author     : Luis Toral
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="es">
+<html>
     <head>
-            <meta charset = "utf-8"/>
-            <meta keywords = "UAMEDIA, repositorio, gestor de contenidos, plataforma de contenidos"/>
-            <meta description = "Gestor de contenidos proporcionados por alumnos y académicos para las UEA's"/>
-            <title>UAMEDIA</title>
+        <meta charset = "utf-8"/>
+        <meta keywords = "UAMEDIA, repositorio, gestor de contenidos, plataforma de contenidos"/>
+        <meta description = "Gestor de contenidos proporcionados por alumnos y académicos para las UEA's"/>
+        <title>UAMEDIA</title>
 
-            <!--Códigos Externos-->
-            <link rel="stylesheet" href="../css/default.css">
-            <link rel="stylesheet" href="../css/registro.css">
-            <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+        <!--Códigos Externos-->
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/registro.css">
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     </head>
-
-
     <body>
         <!--Menú Responsivo-->
         <script type="text/javascript">
-            $(document).ready(function(){
-                    $('.menu_compacto').click(function(){
-                            $('#menu_principal > ul').slideToggle(1500);
-                    });
-                    });
+                $(document).ready(function(){
+                        $('.menu_compacto').click(function(){
+                                $('#menu_principal > ul').slideToggle(1500);
+                        });
+                        });
         </script>
         <!--Fin-->
-
 
         <div id="contenedor_gral">
 
