@@ -10,28 +10,20 @@ public class AutorVO {
     private String rol;
     private String uEA;
     private String carrera;
+    private String contraseña;
 
-    public AutorVO(String id, String nombre, String correo, String sexo, String fechaDeNacimiento, String rol, String uEA, String carrera) {
+    public AutorVO(String id, String nombre, String correo, String sexo, String contraseña) {
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
         this.sexo = sexo;
-        this.fechaDeNacimiento = fechaDeNacimiento;
-        this.rol = rol;
-        this.uEA = uEA;
-        this.carrera = carrera;
+        this.contraseña = contraseña;
     }
 
-    /**
-     * @return the id
-     */
     public String getId() {
         return id;
     }
 
-    /**
-     * @param id the id to set
-     */
     public void setId(String id) {
         this.id = id;
     }
@@ -52,6 +44,38 @@ public class AutorVO {
         this.correo = correo;
     }
 
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getFechaDeNacimiento() {
+        return fechaDeNacimiento;
+    }
+
+    public void setFechaDeNacimiento(String fechaDeNacimiento) {
+        this.fechaDeNacimiento = fechaDeNacimiento;
+    }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
+    public String getuEA() {
+        return uEA;
+    }
+
+    public void setuEA(String uEA) {
+        this.uEA = uEA;
+    }
+
     public String getCarrera() {
         return carrera;
     }
@@ -60,59 +84,17 @@ public class AutorVO {
         this.carrera = carrera;
     }
 
-    /**
-     * @return the sexo
-     */
-    public String getSexo() {
-        return sexo;
+    public String getContraseña() {
+        return contraseña;
     }
 
-    /**
-     * @param sexo the sexo to set
-     */
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
     }
+    
+    
+    
 
-    /**
-     * @return the fechaDeNacimiento
-     */
-    public String getFechaDeNacimiento() {
-        return fechaDeNacimiento;
-    }
+    
 
-    /**
-     * @param fechaDeNacimiento the fechaDeNacimiento to set
-     */
-    public void setFechaDeNacimiento(String fechaDeNacimiento) {
-        this.fechaDeNacimiento = fechaDeNacimiento;
-    }
-
-    /**
-     * @return the rol
-     */
-    public String getRol() {
-        return rol;
-    }
-
-    /**
-     * @param rol the rol to set
-     */
-    public void setRol(String rol) {
-        this.rol = rol;
-    }
-
-    /**
-     * @return the uEA
-     */
-    public String getuEA() {
-        return uEA;
-    }
-
-    /**
-     * @param uEA the uEA to set
-     */
-    public void setuEA(String uEA) {
-        this.uEA = uEA;
-    }  
 }

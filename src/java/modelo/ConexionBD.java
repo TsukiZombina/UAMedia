@@ -7,9 +7,9 @@ import javax.swing.JOptionPane;
 public class ConexionBD {
 
 	static public String bd = "uamedia";
-	   static public String login = "root";
-	   static public String password = "root";
-	   static public String url = "jdbc:mysql://127.0.0.1:3306/"+bd;
+       static public String login = "root";
+       static public String password = "labsim";
+       static public String url = "jdbc:mysql://127.0.0.1:3306/"+bd;
 
 	   //
 	   Connection conexion = null;

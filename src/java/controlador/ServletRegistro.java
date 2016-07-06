@@ -35,12 +35,15 @@ public class ServletRegistro extends HttpServlet {
                 String nombre=request.getParameter("nombre");
 		String correo=request.getParameter("correo");
                 String sexo=request.getParameter("sexo");
-                String fechaDeNacimiento=request.getParameter("fecha");
-                String rol=request.getParameter("rol");
-                String uEA=request.getParameter("uea");
-		String carrera=request.getParameter("carrera");
+                String contraseña=request.getParameter("contraseña");
                 
-	        AutorVO unAutor=new AutorVO(id, nombre, correo, sexo, fechaDeNacimiento, rol, uEA, carrera);
+                //String fechaDeNacimiento=request.getParameter("fecha");
+                //String rol=request.getParameter("rol");
+                //String uEA=request.getParameter("uea");
+		
+                
+                //public AutorVO(String id, String nombre, String correo, String sexo, String contraseña) {
+	        AutorVO unAutor=new AutorVO(id, nombre, correo, sexo, contraseña);
 			boolean respuesta=AutorDAO.agregarAutor(unAutor);
                         if(!id.isEmpty()){
                             if(respuesta){
