@@ -66,13 +66,19 @@
 			<section id="cuerpo_principal">
 
 			<h1>Mi Perfil</h1>
+                        
+                        <h2>
+                            
+                            Bienvenid@ ${sessionScope.NombreSesion}
+                            
+                        </h2>
             
 			<section id="informacion_tabla">
 				<table>
 					<tbody>
 						<tr>
 							<th>Usuario:</th>
-							<td><p>rortega</p></td>
+							<td><p>${sessionScope.NombreSesion}</p></td>
                                                         <th>Rol:</th>
 							<td><p>Estudiante</p></td>
 						</tr>
@@ -91,6 +97,9 @@
 						<tr>
 							<th>Comentarios:</th>
 							<td><p>6</p></td>
+                                                        <th>Matrícula:</th>
+							<td><p> ${sessionScope.matricula}</p></td>
+                                                       
 						</tr>
 					</tbody>
 				</table>

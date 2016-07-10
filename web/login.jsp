@@ -63,7 +63,8 @@
 			<!--Sección Cuerpo Principal-->
 			<section id="cuerpo_principal">
 				<h1>Login</h1>
-				<section id="login">            
+				<section id="login"> 
+                                    <form action="ServletLogin" method="post">
 					<table id="login_tabla">
 						<tbody>
 							<tr id="cabecera">
@@ -72,8 +73,8 @@
 							</tr>
 							<tr>
 								<td>
-								<p>Usuario:</p><input  type="text" name="user" value="Matrícula"><br><br>
-								<p>Contraseña:</p><input  type="password" name="pass" value="Contraseña">
+								<p>Usuario:</p><input  type="text" name="user" placeHolder="Matrícula"><br><br>
+								<p>Contraseña:</p><input  type="password" name="pass" placeHolder="Contraseña">
 								<section id="boton_borra"><input  type="submit" value="Limpiar"></section>	
 	     		           		</td>	
 							</tr>
@@ -85,7 +86,7 @@
 							</tr>
 						</tbody>
 					</table>
-
+                                    </form>
 	             
 	                
 	                
