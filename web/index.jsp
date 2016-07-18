@@ -48,7 +48,7 @@
                     <li><a href="index.jsp">Página Principal</a></li>
                     <li><a href="catalogo.jsp">Catálogo UEA's</a></li>
                     <li><a href="libros.jsp">Libros</a></li>
-                    <li><a href="videos.jsp">Videos</a></li>
+                    <li><a href="<%=request.getContextPath()+"/ServletVideos"%>">Videos</a></li>
                     <li><a href="documentos.jsp">Documentos</a></li>
                     <li><a href="registro.jsp">Registro</a></li>
                     <li><a href="login.jsp">Login</a></li>

@@ -1,10 +1,6 @@
-<%-- 
-    Document   : videos
-    Created on : 25/06/2016, 07:43:26 PM
-    Author     : Luis Toral
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -67,42 +63,59 @@
 
                             <h1>Videos</h1>
 
-                <section class="avisos">
-
+                <section class="avisos" >
+                        
+                        
+                  
+                            
+                            
                     <p>Videos recomendados por la comunidad de acuerdo a popularidad</p>
 
                     <iframe width="854" height="480" src="https://www.youtube.com/embed/aqxgWHBe1aE" frameborder="0" margin-left="100px" allowfullscreen></iframe>
                                         
                     <ul class="lista_avisos">
 
-                        <a href="#">
+                        
+              
+                        <a href="<%=request.getAttribute("url0")%>">
                         <li>                      
                             <img src="imgs/vineta_aviso.png"/>
-                            <h1>Video</h1>	
-                            <p>Descripcion</p>
+                            <h1>
+                                <%=request.getAttribute("nombre0")%>                            
+                            </h1>
+                            <h2>
+                                <%=request.getAttribute("fecha0")%>                            
+                            </h2>
+                            <p><%=request.getAttribute("descripcion0")%></p>
                         </li>
                         </a>
 
-                        <a href="#">
+                        <a href="<%=request.getAttribute("url1")%>">
                             <li>
                                 <img src="imgs/vineta_aviso.png"/>
-                                <h1>Video 1</h1>	
-                                <p>Descripcion</p>
+                                <h1><%=request.getAttribute("nombre1")%></h1>	
+                                                            <h2>
+                                <%=request.getAttribute("fecha1")%>                            
+                            </h2>
+                                <p><%=request.getAttribute("descripcion1")%></p>
+                            </li>
+                        </a>
+
+                        <a href="<%=request.getAttribute("url2")%>">
+                            <li>
+                                <img src="imgs/vineta_aviso.png"/>
+                                <h1><%=request.getAttribute("nombre2")%></h1>
+                                                            <h2>
+                                <%=request.getAttribute("fecha2")%>                            
+                            </h2>
+                                <p><%=request.getAttribute("descripcion2")%></p>
                             </li>
                         </a>
 
                         <a href="#">
                             <li>
                                 <img src="imgs/vineta_aviso.png"/>
-                                <h1>Video 2</h1>	
-                                <p>Descripcion</p>
-                            </li>
-                        </a>
-
-                        <a href="#">
-                            <li>
-                                <img src="imgs/vineta_aviso.png"/>
-                                <h1>Video 3</h1>	
+                                <h1><%=request.getAttribute("video3")%></h1>	
                                 <p>Descripcion</p>
                             </li>
                         </a>
@@ -116,13 +129,14 @@
                         </a>
 
                     </ul>
+                   
                 </section>
             
             </section>
 
 			<!--FOOTER-->
             <footer>
-                    <h1>Módulo de Información Escolar<h1>
+				<h1>Gestor de contenidos de UEA's proporcionados por alumnos y académicos<h1>
             </footer>
 			<!--Fin FOOTER-->
 
