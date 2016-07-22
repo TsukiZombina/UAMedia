@@ -80,7 +80,10 @@
 
         <section class="DescripcionRecurso">
                 <h2>Detalles del recurso</h2>
-                <form action="ServletAñadirRecurso" method="post">
+
+		<form action="ServletAñadirRecurso" enctype="multipart/form-data" method="post">
+
+                
                 <h3>Título</h3>
                 <h1><input type="text" name="titulo" placeholder="Ingresa el título del recurso"></h1>
             
@@ -137,7 +140,7 @@
                     <td></td>
                     <td> 
                         <div id="botonSubirRecurso">
-                        <input type="file" name="Cargar un archivo">
+                        <input type="file" value="Cargar un archivo" name="enlace">
                         </div>
                     </td>
                     <td></td>

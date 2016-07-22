@@ -15,23 +15,25 @@ import java.sql.Statement;
  */
 public class RecursoDAO {
 
-    public static boolean agregarRecurso(RecursoVO unRecurso){
-		boolean agregado=false;
+    public static boolean agregarRecurso(RecursoVO unNuevoRecurso) {
+        
+        boolean agregado=false;
 		try {
-                    ConexionBD c=new ConexionBD();
-                    Connection con=c.getConexion();
-                    if(con!=null){
-                        Statement st;
-                        st = con.createStatement();
-                        st.executeUpdate("INSERT INTO mydb.Recurso(`nombreRecurso`,`descripcionRecurso`,`url`) VALUES ('"+unRecurso.getNombre()+"','"+unRecurso.getDescripcion()+"','"+unRecurso.getUrl()+"')");
-                        agregado=true;
-                        st.close();
-                    }
-                    c.cerrarConexion();
+			ConexionBD c=new ConexionBD();
+			Connection con=c.getConexion();
+			if(con!=null){
+				Statement st;
+				st = con.createStatement();
+				st.executeUpdate("INSERT INTO Recurso(`nombreRecurso`,`descripcionRecurso`,`fechaPublicacion`,`url`,`tamaño`,`licencia`,`tipoRecurso`,`temaGeneral`) VALUES ('"+unNuevoRecurso.getNombre()+"','"+unNuevoRecurso.getDescripcion()+"','"+unNuevoRecurso.getFechaPublicacion()+"','"+unNuevoRecurso.getURL()+"','"+unNuevoRecurso.getTamaño()+"','"+unNuevoRecurso.getLicencia()+"','"+unNuevoRecurso.getTipoRecurso()+"','"+unNuevoRecurso.getTemaGeneral()+"')");
+				
+                                agregado=true;
+				st.close();
+			}
+			c.cerrarConexion();
 		} catch (SQLException e) {
 			agregado=false;
 			e.printStackTrace();
 		}
-		return agregado;           
-    }
+		return agregado;      
+    }  
 }

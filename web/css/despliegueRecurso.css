@@ -1,0 +1,82 @@
+.portada img{
+	width: 150px;
+	height: 220px;
+
+}
+
+#despliegueRecurso table img{
+	border-radius: 10px;
+	border: 1px solid #640923;
+
+}
+
+
+.cabecera {	
+	border-radius:10px;
+	background-color: #640923;
+	border:0px;
+	min-height: 15px;
+	height: 40px;
+	width: 100px;
+}
+
+.nomCabecera{
+    width: 100px;
+}
+/****************************************/
+
+
+/****************************************/
+#despliegueRecurso table{
+	border-radius: 10px;
+	border: 1px solid #640923;
+	background-color: #E6E6E6;
+	width: 1200px;
+	min-width: 300px;
+	margin: 5px;
+}
+
+#despliegueRecurso table h1{
+	color:#FFFFFF;
+	font-size: 18px;
+
+}
+
+#despliegueRecurso table p{
+	color:#E6E6E6;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+#despliegueRecurso table h2{
+
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#despliegueRecurso table h3{
+	color:#494949;
+	font-size: 15px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+
+/****************************************/
+
+
+
+#tabla_recurso{
+	float:left;
+	clear:left;
+}
+
+
+
+#tabla_comentario{
+	float:left;
+	clear:left;
+}

@@ -1,32 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modelo;
 
 /**
  *
- * @author Luis Toral
+ * @author Horowitz
  */
 public class RecursoVO {
-    private String nombre;
+    private String nombre;	
     private String descripcion;
-    private String fecha;
-    private int calificacion;
-    private String url;
+    private String fechaPublicacion;
+    private String URL;
 
-    public RecursoVO() {
-    }
+    private String calificacionPromedio;
+    private String licencia;
+    private String tipoRecurso;
+    private String temaGeneral;
+    private int tamaño;
 
-    public RecursoVO(String nombre, String descripcion, String url) {
+    public RecursoVO(String nombre, String descripcion, String fechaPublicacion, String URL, int tamaño, String licencia, String tipoRecurso, String temaGeneral) {
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.url = url;
+        this.fechaPublicacion = fechaPublicacion;
+        this.URL = URL;
+        this.calificacionPromedio = calificacionPromedio;
+        this.licencia = licencia;
+        this.tipoRecurso = tipoRecurso;
+        this.temaGeneral = temaGeneral;
+        this.tamaño = tamaño;
+      
     }
 
-    
-    
     public String getNombre() {
         return nombre;
     }
@@ -43,31 +45,63 @@ public class RecursoVO {
         this.descripcion = descripcion;
     }
 
-    public String getFecha() {
-        return fecha;
+    public String getFechaPublicacion() {
+        return fechaPublicacion;
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setFechaPublicacion(String fechaPublicacion) {
+        this.fechaPublicacion = fechaPublicacion;
     }
 
-    public int getCalificacion() {
-        return calificacion;
+    public String getURL() {
+        return URL;
     }
 
-    public void setCalificacion(int calificacion) {
-        this.calificacion = calificacion;
+    public void setURL(String URL) {
+        this.URL = URL;
     }
 
-    public String getUrl() {
-        return url;
+    public String getCalificacionPromedio() {
+        return calificacionPromedio;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setCalificacionPromedio(String calificacionPromedio) {
+        this.calificacionPromedio = calificacionPromedio;
+    }
+
+    public String getLicencia() {
+        return licencia;
+    }
+
+    public void setLicencia(String licencia) {
+        this.licencia = licencia;
+    }
+
+    public String getTipoRecurso() {
+        return tipoRecurso;
+    }
+
+    public void setTipoRecurso(String tipoRecurso) {
+        this.tipoRecurso = tipoRecurso;
+    }
+
+    public String getTemaGeneral() {
+        return temaGeneral;
+    }
+
+    public void setTemaGeneral(String temaGeneral) {
+        this.temaGeneral = temaGeneral;
+    }
+
+    public int getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(int tamaño) {
+        this.tamaño = tamaño;
     }
     
     
-    
+            
     
 }
