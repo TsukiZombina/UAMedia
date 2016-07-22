@@ -2,29 +2,43 @@ package modelo;
 
 public class AutorVO {
 	
-    private String id;	
+    private int id;	
     private String nombre;
     private String correo;
     private String sexo;
     private String fechaDeNacimiento;
     private String rol;
-    private String uEA;
     private String carrera;
     private String contraseña;
+    private String nick;
 
-    public AutorVO(String id, String nombre, String correo, String sexo, String contraseña) {
+    public String getNick() {
+        return nick;
+    }
+
+    public void setNick(String nick) {
+        this.nick = nick;
+    }
+    
+    public AutorVO(String nombre, String sexo, String fechaDeNacimiento, String nick, int id, String correo, String carrera, String contraseña, String rol) {
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
         this.sexo = sexo;
+        this.fechaDeNacimiento = fechaDeNacimiento;
+        this.rol = rol;
+        this.carrera = carrera;
         this.contraseña = contraseña;
+        this.nick = nick;
     }
 
-    public String getId() {
+
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -68,13 +82,7 @@ public class AutorVO {
         this.rol = rol;
     }
 
-    public String getuEA() {
-        return uEA;
-    }
 
-    public void setuEA(String uEA) {
-        this.uEA = uEA;
-    }
 
     public String getCarrera() {
         return carrera;

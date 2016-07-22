@@ -1,6 +1,8 @@
 package controlador;
 
 import java.io.IOException;
+import static java.lang.Integer.parseInt;
+import java.util.Date;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -16,7 +18,7 @@ import modelo.AutorVO;
 /**
  * Servlet implementation class ServletRegistro
  */
-@WebServlet("/ServletRegistroAlumno")
+@WebServlet("/ServletRegistro")
 public class ServletRegistro extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -31,21 +33,35 @@ public class ServletRegistro extends HttpServlet {
                 response.setContentType("text/html;charset=UTF-8");
                 request.setCharacterEncoding("UTF-8");
         
-                String id=request.getParameter("id");	
+	
                 String nombre=request.getParameter("nombre");
+                String genero=request.getParameter("genero");
+                String fechaNacimiento=request.getParameter("fechaNacimiento");              
+                String nick=request.getParameter("nick");
+                String matricula = request.getParameter("matricula");
+                        
 		String correo=request.getParameter("correo");
-                String sexo=request.getParameter("sexo");
-                String contraseña=request.getParameter("contraseña");
+                String division=request.getParameter("carrera");
+                String pass=request.getParameter("pass");
+                String passR=request.getParameter("passR");
+                String rol= request.getParameter("rol");
+
+                String contraseña="";
                 
-                //String fechaDeNacimiento=request.getParameter("fecha");
-                //String rol=request.getParameter("rol");
-                //String uEA=request.getParameter("uea");
-		
+                if(pass.equals(passR))
+                    contraseña=pass;
+                else
+                    request.getRequestDispatcher("error.jsp").forward(request, response);
+            
+                System.out.print(matricula);                
+
+                int id = Integer.parseInt(matricula);
+                System.out.print(id);
                 
                 //public AutorVO(String id, String nombre, String correo, String sexo, String contraseña) {
-	        AutorVO unAutor=new AutorVO(id, nombre, correo, sexo, contraseña);
+	        AutorVO unAutor=new AutorVO(nombre, genero, fechaNacimiento, nick, id, correo, division, contraseña, rol);
 			boolean respuesta=AutorDAO.agregarAutor(unAutor);
-                        if(!id.isEmpty()){
+                        if(!nombre.isEmpty()){
                             if(respuesta){
                                     request.getRequestDispatcher("mensajeOK.jsp").forward(request, response);
                             }else{
