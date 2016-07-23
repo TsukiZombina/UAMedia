@@ -29,6 +29,15 @@ public class RecursoVO {
       
     }
 
+
+    RecursoVO(String nombre, String descripcion, String fechaPublicacion, String URL) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.fechaPublicacion = fechaPublicacion;
+        this.URL = URL;
+
+    }
+
     public String getNombre() {
         return nombre;
     }

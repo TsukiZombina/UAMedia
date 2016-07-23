@@ -122,7 +122,13 @@
                         <option value="Diapositivas">Diapositivas</option>      
                     </select>
 
-            
+                <h3>Tipo de Licencia</h3>
+                    <select name="tipoLicencia">
+                        <option value="CopyLeft">CopyLeft</option>
+                        <option value="CopyRight">CopyRight</option>
+                        <option value="CreativeCommons">CreativeCommons</option>     
+                    </select>
+                            
                 <h3>Enlace del recurso/video</h3>
                 <h1><input type="url" name="enlaceExterno" placeholder="Ingresa URL del recurso externo"></h1>
 

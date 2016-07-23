@@ -124,7 +124,6 @@ public class ServletAñadirRecurso extends HttpServlet{
                         case "enlaceExterno":
                             enlace=valor;
                             break;
-
                         case "tema":
                             tema=valor;
                             break;
@@ -134,8 +133,11 @@ public class ServletAñadirRecurso extends HttpServlet{
                         case "tipoRecurso":
                             tipoRecurso=valor;
                             break;
-                        default:
+                        case "tipoLicencia":
                             licencia=valor;
+                            break;
+                        default:
+                            licencia="copyRight";
                             break;
                     }
                 }

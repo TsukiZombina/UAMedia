@@ -73,7 +73,7 @@
                         <table >
                             <tr class="cabecera">
                                     <td><h1>Título:</h1></td>
-                                    <td colspan="2"><p>BIG DATA: ANALISIS DE GRANDES VOLUMENES DE DATOS EN LAS ORGANIZACIONES</p></td>
+                                    <td colspan="2"><p><%=request.getAttribute("nombre0")%></p></td>
                             </tr>
 
                             <tr class="cabecera">
@@ -90,13 +90,13 @@
 
                             <tr>
                                     <td><h2>Descripción:</h2></td>
-                                    <td><h3>Descripción del recurso</h3></td>							
+                                    <td><h3><%=request.getAttribute("descripcion0")%></h3></td>							
                             </tr>
 
 
                             <tr>
                                     <td><h2>Fecha de Publicación:</h2></td>
-                                    <td><h3>Mayo 2015</h3></td>
+                                    <td><h3><%=request.getAttribute("fechaPublicacion0")%></h3></td>
                             </tr>
                         </table>
                     </section>
@@ -105,7 +105,7 @@
                         <table>
                             <tr class="cabecera">
                                     <td><h1>Título:</h1></td>
-                                    <td colspan="2"><p>RUBY ON RAILS: DEASRROLLO PRACTICO DE APLICACIONES WEB</p></td>		
+                                    <td colspan="2"><p><%=request.getAttribute("nombre1")%></p></td>		
                             </tr>
 
                             <tr class="cabecera">
@@ -122,13 +122,13 @@
 
                             <tr>
                                     <td><h2>Descripción:</h2></td>
-                                    <td><h3>Descripción del recurso</h3></td>							
+                                    <td><h3><%=request.getAttribute("descripcion1")%></h3></td>							
                             </tr>
 
 
                             <tr>
                                     <td><h2>Fecha de Publicación:</h2></td>
-                                    <td><h3>Mayo 2015</h3></td>
+                                    <td><h3><%=request.getAttribute("fechaPublicacion1")%></h3></td>
                             </tr>
 
                         </table>			
@@ -138,7 +138,7 @@
                         <table>
                             <tr class="cabecera" >
                                 <td ><h1>Título:</h1></td>
-                                <td colspan="2"><p>SISTEMAS OPERATIVOS MODERNOS</p></td>
+                                <td colspan="2"><p><%=request.getAttribute("nombre2")%></p></td>
                             </tr>
 
                             <tr class="cabecera">
@@ -156,13 +156,13 @@
 
                             <tr>
                                 <td><h2>Descripción:</h2></td>
-                                <td><h3>Descripción del recurso</h3></td>							
+                                <td><h3><%=request.getAttribute("descripcion2")%></h3></td>							
                             </tr>
 
 
                             <tr>
                                 <td><h2>Fecha de Publicación:</h2></td>
-                                <td><h3>Mayo 2015</h3></td>
+                                <td><h3><%=request.getAttribute("fechaPublicacion2")%></h3></td>
                             </tr>
                         </table>
                     </section>
@@ -171,7 +171,7 @@
                             <table>				
                                 <tr class="cabecera">
                                         <td ><h1>Título:</h1></td>
-                                        <td colspan="2"><p>REDES DE COMPUTADORAS: UN ENFOQUE DESCENDENTE</p></td>		
+                                        <td colspan="2"><p><%=request.getAttribute("nombre3")%></p></td>		
                                 </tr>
 
                                 <tr class="cabecera">
@@ -188,11 +188,11 @@
                                 </tr>
                                 <tr>
                                     <td><h2>Descripción:</h2></td>
-                                    <td><h3>Descripción del recurso</h3></td>							
+                                    <td><h3><%=request.getAttribute("descripcion3")%></h3></td>							
                                 </tr>
                                 <tr>
                                     <td><h2>Fecha de Publicación:</h2></td>
-                                    <td><h3>Mayo 2015</h3></td>
+                                    <td><h3><%=request.getAttribute("fechaPublicacion3")%></h3></td>
                                 </tr>
                             </table>
                     </section>                  

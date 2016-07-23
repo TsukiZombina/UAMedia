@@ -13,33 +13,32 @@ import modelo.RecursoDAO;
 import modelo.RecursoVO;
 
 
-
 /**
  *
  * @author Horowitz
  */
 
-@WebServlet("/ServletVideos")
-public class ServletVideos extends HttpServlet{
+@WebServlet("/ServletDocumentos")
+public class ServletDocumentos extends HttpServlet{
  
     private static final long serialVersionUID = 1L;
   
-    public ServletVideos() {
+    public ServletDocumentos() {
     }
 
     @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
-     //    VideosVO videos = new VideosVO();
-            List<RecursoVO> listaVideos = null;
+     //    RecursoVO videos = new RecursoVO();
+            List<RecursoVO> listaDocumentos = null;
             RecursoDAO dao = new RecursoDAO();
             
         try {
             response.setContentType("text/html;charset=UTF-8");
             request.setCharacterEncoding("UTF-8");         
             System.out.println("Hola Mundo!!!!!!!");
-            listaVideos = RecursoDAO.obtenerVideos();
+            listaDocumentos = RecursoDAO.obtenerDocumentos();
            
             //VideosVO unNuevoVectorVideo = new VideosVO();
       //      listaVideos = VideosDAO.obtenerVideos();
@@ -57,7 +56,7 @@ public class ServletVideos extends HttpServlet{
                                         
 
             int i=0;
-            for(RecursoVO v : RecursoDAO.obtenerVideos()){
+            for(RecursoVO v : RecursoDAO.obtenerDocumentos()){
                //v.getNombre();
                request.setAttribute("nombre"+i,v.getNombre());
                request.setAttribute("descripcion"+i,v.getDescripcion());
@@ -68,12 +67,12 @@ public class ServletVideos extends HttpServlet{
                 
         //for(VideosVO p : dao.obtenerVideos()){
             System.out.println("Hola Mundo!!!!!!!");
-            System.out.println(listaVideos.get(0).getNombre());
-            System.out.println(listaVideos.get(1).getNombre());
-            System.out.println(listaVideos.get(2).getNombre());
+            System.out.println(listaDocumentos.get(0).getNombre());
+            System.out.println(listaDocumentos.get(1).getNombre());
+            System.out.println(listaDocumentos.get(2).getNombre());
             //request.setParameter("nombre", request.getParameter("nombre"));
     //    }
-            request.getRequestDispatcher("videos.jsp").forward(request, response);  //HttpSession sesion = request.getSession();
+            request.getRequestDispatcher("documentos.jsp").forward(request, response);  //HttpSession sesion = request.getSession();
 
             
             
@@ -81,5 +80,5 @@ public class ServletVideos extends HttpServlet{
             System.out.println(e.getMessage());
         }
                      
-    }
+	}
 }
