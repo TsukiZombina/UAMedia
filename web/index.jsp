@@ -49,7 +49,7 @@
                     <li><a href="catalogo.jsp">Catálogo UEA's</a></li>
                     <li><a href="<%=request.getContextPath()+"/ServletLibros"%>">Libros</a></li>
                     <li><a href="<%=request.getContextPath()+"/ServletVideos"%>">Videos</a></li>
-                    <li><a href="<%=request.getContextPath()+"/ServletDocumentos"%>Documentos</a></li>
+                    <li><a href="<%=request.getContextPath()+"/ServletDocumentos"%>">Documentos</a></li>
                     <li><a href="registro.jsp">Registro</a></li>
                     <li><a href="login.jsp">Login</a></li>
                 </ul>
