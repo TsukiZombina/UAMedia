@@ -157,4 +157,44 @@ public class RecursoDAO {
            return listaLibros;                  
     }
   
+    
+    
+        public static List<RecursoVO>  obtenerRecurso(String atributoBusqueda) {
+        List<RecursoVO> listaRecursos = null;
+   //     String query = "SELECT nombreRecurso, descripcionRecurso, fechaPublicacion, url FROM recurso where nombreRecurso='"+atributoBusqueda+"'";
+
+       
+		try {
+			ConexionBD c=new ConexionBD();
+			Connection con=c.getConexion();
+			if(con!=null){
+				Statement st;
+				st = con.createStatement();
+                               String query = "SELECT nombreRecurso, descripcionRecurso, fechaPublicacion, url FROM recurso where nombreRecurso='"+atributoBusqueda+"'";
+
+                                ResultSet rs = st.executeQuery(query);
+				
+                                listaRecursos = new ArrayList();
+                while(rs.next()){
+                //    VideosVO video = new VideosVO();
+                    RecursoVO libro = new RecursoVO(rs.getString("nombreRecurso"),rs.getString("descripcionRecurso"),rs.getString("fechaPublicacion"),rs.getString("fechaPublicacion"));
+                    libro.setNombre(rs.getString("nombreRecurso"));
+                    libro.setDescripcion(rs.getString("descripcionRecurso"));
+                    libro.setFechaPublicacion(rs.getString("fechaPublicacion"));
+                    libro.setURL(rs.getString("url"));
+                    listaRecursos.add(libro);
+               //     listaVideos.addElement(video);
+                }                  
+                rs.close();  
+                st.close();                
+			}
+			c.cerrarConexion();
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		return listaRecursos;      
+    }  
+
+    
 }

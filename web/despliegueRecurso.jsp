@@ -67,7 +67,7 @@
                         <table >
                             <tr class="cabecera">
                                     <td><h1>Título:</h1></td>
-                                    <td colspan="2"><p>BIG DATA: ANALISIS DE GRANDES VOLUMENES DE DATOS EN LAS ORGANIZACIONES</p></td>
+                                    <td colspan="2"><p><%=request.getAttribute("nombre0")%></p></td>
                             </tr>
 
                             <tr class="cabecera">

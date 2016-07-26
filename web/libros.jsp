@@ -83,8 +83,13 @@
 
                             <tr >
                                     <td rowspan="5">
-                                            <figure class="portada">
-                                    <img src="imgs/big_data.jpg"/>
+                                        <figure class="portada">
+                                            <a href="<%=request.getContextPath()+"/ServletDesplegarRecurso?nombre="+request.getAttribute("nombre0")%>">
+                                            <img src="imgs/big_data.jpg"/>
+                                    
+                                            </a>          
+                                    
+                                    
                             </figure>
                                     </td>
 

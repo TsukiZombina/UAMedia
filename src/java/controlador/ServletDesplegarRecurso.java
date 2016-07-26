@@ -9,15 +9,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import modelo.RecursoDAO;
+import modelo.RecursoVO;
 
-import modelo.VideosDAO;
-import modelo.VideosVO;
-
-
-/**
- *
- * @author Horowitz
- */
 
 @WebServlet("/ServletDesplegarRecurso")
 public class ServletDesplegarRecurso extends HttpServlet{
@@ -32,14 +26,15 @@ public class ServletDesplegarRecurso extends HttpServlet{
 
 
      //    VideosVO videos = new VideosVO();
-            List<VideosVO> listaVideos = null;
-            VideosDAO dao = new VideosDAO();
-            
+            List<RecursoVO> listaRecursos = null;
+            RecursoDAO dao = new RecursoDAO();
+            String atributoBusqueda=request.getParameter("nombre");
+        //    String atributoBusqueda="Hilos en Java";
         try {
             response.setContentType("text/html;charset=UTF-8");
             request.setCharacterEncoding("UTF-8");         
             System.out.println("Hola Mundo!!!!!!!");
-            listaVideos = VideosDAO.obtenerVideos();
+            listaRecursos = RecursoDAO.obtenerRecurso(atributoBusqueda);
            
             //VideosVO unNuevoVectorVideo = new VideosVO();
       //      listaVideos = VideosDAO.obtenerVideos();
@@ -57,7 +52,7 @@ public class ServletDesplegarRecurso extends HttpServlet{
                                         
 
             int i=0;
-            for(VideosVO v : VideosDAO.obtenerVideos()){
+            for(RecursoVO v : RecursoDAO.obtenerRecurso(atributoBusqueda)){
                //v.getNombre();
                request.setAttribute("nombre"+i,v.getNombre());
                request.setAttribute("descripcion"+i,v.getDescripcion());
@@ -67,13 +62,13 @@ public class ServletDesplegarRecurso extends HttpServlet{
             }       
                 
         //for(VideosVO p : dao.obtenerVideos()){
-            System.out.println("Hola Mundo!!!!!!!");
+       /*     System.out.println("Hola Mundo!!!!!!!");
             System.out.println(listaVideos.get(0).getNombre());
             System.out.println(listaVideos.get(1).getNombre());
-            System.out.println(listaVideos.get(2).getNombre());
+            System.out.println(listaVideos.get(2).getNombre());*/
             //request.setParameter("nombre", request.getParameter("nombre"));
     //    }
-            request.getRequestDispatcher("videos.jsp").forward(request, response);  //HttpSession sesion = request.getSession();
+            request.getRequestDispatcher("despliegueRecurso.jsp").forward(request, response);  //HttpSession sesion = request.getSession();
 
             
             
@@ -82,4 +77,6 @@ public class ServletDesplegarRecurso extends HttpServlet{
         }
                      
 	}
+
+
 }
