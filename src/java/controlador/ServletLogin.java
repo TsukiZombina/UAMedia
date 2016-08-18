@@ -13,9 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.swing.JOptionPane;
+import modelo.AutorDAO;
+import modelo.AutorVO;
 
-import modelo.LoginDAO;
-import modelo.LoginVO;
+
 
 /**
  *
@@ -43,9 +44,13 @@ public class ServletLogin extends HttpServlet{
                 String matricula=request.getParameter("user");	
                 String contraseña=request.getParameter("pass");
    
+                
                 HttpSession sesion = request.getSession();
-                LoginVO unNuevoLogin = new LoginVO(matricula, contraseña);
-			String respuesta = LoginDAO.Login(unNuevoLogin);
+                //LoginVO unNuevoLogin = new LoginVO(matricula, contraseña);
+                AutorVO unNuevoLogin = new AutorVO(matricula, contraseña);
+			//String respuesta = LoginDAO.Login(unNuevoLogin);
+                        String respuesta = AutorDAO.Login(unNuevoLogin);
+                        
                         if(!matricula.isEmpty()){
                             if(respuesta!=null){
                                     
@@ -60,18 +65,7 @@ public class ServletLogin extends HttpServlet{
                                     sesion.setAttribute("error", "Usuario no válido");
                                     request.getRequestDispatcher("errorLogin.jsp").forward(request, response);
                             }
-                        }
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                        }                        
                         else
                         {
                             JOptionPane.showMessageDialog(null, "La matrícula es obligatoria", "Error", JOptionPane.ERROR_MESSAGE);

@@ -1,6 +1,7 @@
 package modelo;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -27,4 +28,34 @@ public class AutorDAO {
         }
         return agregado;
     }
+
+
+
+
+    public static String Login(AutorVO unNuevoLogin) {
+
+		try {
+			ConexionBD c = new ConexionBD();
+			Connection con = c.getConexion();
+			if(con!=null){
+				Statement st;
+				st = con.createStatement();
+				ResultSet rs = st.executeQuery("SELECT nombre FROM autor WHERE idAutor="+Integer.parseInt(unNuevoLogin.getMatricula())+" and contraseña='"+unNuevoLogin.getContraseña()+"'");
+				
+                                
+                                if(rs.next()){
+                                return rs.getString("nombre");
+                                }
+                               
+                          st.close();
+				
+			}
+			c.cerrarConexion();
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		     return null;
+    } 
+
 }

@@ -11,6 +11,12 @@ public class AutorVO {
     private String carrera;
     private String contraseña;
     private String nick;
+    private String matricula;
+    
+    public AutorVO(String matricula, String contraseña) {
+        this.contraseña = contraseña;
+        this.matricula = matricula;
+    }
 
     public String getNick() {
         return nick;
@@ -30,6 +36,14 @@ public class AutorVO {
         this.carrera = carrera;
         this.contraseña = contraseña;
         this.nick = nick;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
 
 
