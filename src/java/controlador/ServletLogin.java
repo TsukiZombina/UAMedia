@@ -41,7 +41,8 @@ public class ServletLogin extends HttpServlet{
 	        response.setContentType("text/html;charset=UTF-8");
                 request.setCharacterEncoding("UTF-8");
         
-                String matricula=request.getParameter("user");	
+                String matr = request.getParameter("user");	
+                int matricula = Integer.parseInt(matr);
                 String contraseña=request.getParameter("pass");
    
                 
@@ -51,7 +52,7 @@ public class ServletLogin extends HttpServlet{
 			//String respuesta = LoginDAO.Login(unNuevoLogin);
                         String respuesta = AutorDAO.Login(unNuevoLogin);
                         
-                        if(!matricula.isEmpty()){
+                        if(!matr.isEmpty()){
                             if(respuesta!=null){
                                     
                             //    String NombreUsuario = LoginDAO.getMatricula(matricula);

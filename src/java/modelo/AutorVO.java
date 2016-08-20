@@ -2,20 +2,36 @@ package modelo;
 
 public class AutorVO {
 	
-    private int id;	
+    private int idAutor;	
     private String nombre;
     private String correo;
     private String sexo;
     private String fechaDeNacimiento;
     private String rol;
-    private String carrera;
     private String contraseña;
     private String nick;
-    private String matricula;
     
-    public AutorVO(String matricula, String contraseña) {
+    private int idTipoRol;
+    private int idCarrera;
+
+    public int getIdTipoRol() {
+        return idTipoRol;
+    }
+
+    public void setIdTipoRol(int idTipoRol) {
+        this.idTipoRol = idTipoRol;
+    }
+
+    public int getIdCarrera() {
+        return idCarrera;
+    }
+
+    public void setIdCarrera(int idCarrera) {
+        this.idCarrera = idCarrera;
+    }
+    public AutorVO(int matricula, String contraseña) {
         this.contraseña = contraseña;
-        this.matricula = matricula;
+        this.idAutor = matricula;
     }
 
     public String getNick() {
@@ -25,35 +41,27 @@ public class AutorVO {
     public void setNick(String nick) {
         this.nick = nick;
     }
-    
-    public AutorVO(String nombre, String sexo, String fechaDeNacimiento, String nick, int id, String correo, String carrera, String contraseña, String rol) {
-        this.id = id;
+
+    public AutorVO(int idAutor, String nombre, String correo, String sexo, String fechaDeNacimiento, String contraseña, String nick, int idTipoRol, int idCarrera) {
+        this.idAutor = idAutor;
         this.nombre = nombre;
         this.correo = correo;
         this.sexo = sexo;
         this.fechaDeNacimiento = fechaDeNacimiento;
-        this.rol = rol;
-        this.carrera = carrera;
         this.contraseña = contraseña;
         this.nick = nick;
+        this.idTipoRol = idTipoRol;
+        this.idCarrera = idCarrera;
+    }
+    
+
+
+    public int getIdAutor() {
+        return idAutor;
     }
 
-    public String getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
-
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setIdAutor(int id) {
+        this.idAutor = id;
     }
 
     public String getNombre() {
@@ -94,16 +102,6 @@ public class AutorVO {
 
     public void setRol(String rol) {
         this.rol = rol;
-    }
-
-
-
-    public String getCarrera() {
-        return carrera;
-    }
-
-    public void setCarrera(String carrera) {
-        this.carrera = carrera;
     }
 
     public String getContraseña() {

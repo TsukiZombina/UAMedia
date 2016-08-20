@@ -72,7 +72,7 @@
 
                             <tr class="cabecera">
                                     <td><h1>UEA:</h1></td>
-                                    <td colspan="2"><p>P.O.O.</p></td>
+                                    <td colspan="2"><p>Pz</p></td>
                             </tr>
 
 
@@ -101,23 +101,23 @@
 
                             <tr>
                                     <td><h2>Descripción:</h2></td>
-                                    <td><h3>Descripción del recurso</h3></td>							
+                                    <td><h3><%=request.getAttribute("descripcion0")%></h3></td>							
                             </tr>
 
 
                             <tr>
                                     <td><h2>Fecha de Publicación:</h2></td>
-                                    <td><h3>Mayo 2015</h3></td>
+                                    <td><h3><%=request.getAttribute("fechaPublicacion0")%></h3></td>
                             </tr>
 
                             <tr>
                                     <td><h2>Tipo de recurso:</h2></td>
-                                    <td><h3>Video</h3></td>
+                                    <td><h3><%=request.getAttribute("tipo0")%></h3></td>
                             </tr>
 
                             <tr>
                                     <td><h2>Licencia:</h2></td>
-                                    <td><h3>Creative</h3></td>
+                                    <td><h3><%=request.getAttribute("licencia0")%></h3></td>
                             </tr>
                         </table>
                     </section>

@@ -73,8 +73,11 @@
                         <table >
                             <tr class="cabecera">
                                     <td><h1>Título:</h1></td>
+                                     <a href="<%=request.getContextPath()+"/ServletDesplegarRecurso?nombre="+request.getAttribute("nombre0")%>">
+
                                     <td colspan="2"><p><%=request.getAttribute("nombre0")%></p></td>
-                            </tr>
+                                     </a>
+                                     </tr>
 
                             <tr class="cabecera">
                                     <td><h1>Autor:</h1></td>
@@ -110,8 +113,10 @@
                         <table>
                             <tr class="cabecera">
                                     <td><h1>Título:</h1></td>
+                                            <a href="<%=request.getContextPath()+"/ServletDesplegarRecurso?nombre="+request.getAttribute("nombre1")%>">
+                                    
                                     <td colspan="2"><p><%=request.getAttribute("nombre1")%></p></td>		
-                            </tr>
+                                            </a>                            </tr>
 
                             <tr class="cabecera">
                                     <td><h1>Autor:</h1></td>
@@ -121,7 +126,10 @@
                             <tr>
                                     <td rowspan="5">
                              <figure class="portada">
+                                 
+                                    <a href="<%=request.getContextPath()+"/ServletDesplegarRecurso?nombre="+request.getAttribute("nombre1")%>">
                                     <img src="imgs/ruby_rails.jpg"/>
+                                    </a>
                              </figure>
                             </td>
 
@@ -143,8 +151,10 @@
                         <table>
                             <tr class="cabecera" >
                                 <td ><h1>Título:</h1></td>
+                                            <a href="<%=request.getContextPath()+"/ServletDesplegarRecurso?nombre="+request.getAttribute("nombre2")%>">
+                                
                                 <td colspan="2"><p><%=request.getAttribute("nombre2")%></p></td>
-                            </tr>
+                                            </a>                   </tr>
 
                             <tr class="cabecera">
                                 <td ><h1>Autor:</h1></td>
@@ -153,8 +163,12 @@
 
                             <tr>
                                 <td rowspan="5">
-                                    <figure class="portada">
+                                    <figure class="portada">  
+                                        <a href="<%=request.getContextPath()+"/ServletDesplegarRecurso?nombre="+request.getAttribute("nombre2")%>">                                            
+
                                             <img src="imgs/sistemas_operativos.jpg"/>
+                                   
+                                    </a>
                                     </figure>
                                 </td>
                             </tr>
@@ -176,8 +190,10 @@
                             <table>				
                                 <tr class="cabecera">
                                         <td ><h1>Título:</h1></td>
+                                            <a href="<%=request.getContextPath()+"/ServletDesplegarRecurso?nombre="+request.getAttribute("nombre3")%>">
+                                        
                                         <td colspan="2"><p><%=request.getAttribute("nombre3")%></p></td>		
-                                </tr>
+                                            </a>                                </tr>
 
                                 <tr class="cabecera">
                                         <td ><h1>Autor:</h1></td>
@@ -186,8 +202,11 @@
 
                                 <tr>
                                     <td rowspan="5">
-                                        <figure class="portada">
+                                        <figure class="portada">   
+                                            <a href="<%=request.getContextPath()+"/ServletDesplegarRecurso?nombre="+request.getAttribute("nombre3")%>">
+
                                                <img src="imgs/redes_computadoras.jpg"/>
+                                               </a>
                                         </figure>
                                     </td>
                                 </tr>

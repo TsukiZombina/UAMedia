@@ -10,14 +10,13 @@ public class AutorDAO {
 	
     public static boolean agregarAutor(AutorVO unAutor){
         boolean agregado=false;
-        int llenar=1;
         try {
         ConexionBD c=new ConexionBD();
         Connection con=c.getConexion();
             if(con!=null){
                 Statement st;
                 st = con.createStatement();
-                st.executeUpdate("INSERT INTO uamedia.autor(`idAutor`,`nombre`,`correo`,`sexo`,`fechaNacimiento`,`contraseña`,`nick`) VALUES ("+unAutor.getId()+",'"+unAutor.getNombre()+"','"+unAutor.getCorreo()+"','"+unAutor.getSexo()+"','"+unAutor.getFechaDeNacimiento()+"','"+unAutor.getContraseña()+"','"+unAutor.getNick()+"')");
+                st.executeUpdate("INSERT INTO uamedia.autor(`idAutor`,`nombre`,`correo`,`sexo`,`fechaNacimiento`,`contraseña`,`nick`,`tipoRol_idTipoRol`,`uEA_idUEA`,`Carrera_idCarrera`) VALUES ("+unAutor.getIdAutor()+",'"+unAutor.getNombre()+"','"+unAutor.getCorreo()+"','"+unAutor.getSexo()+"','"+unAutor.getFechaDeNacimiento()+"','"+unAutor.getContraseña()+"','"+unAutor.getNick()+"','"+unAutor.getIdTipoRol()+"','"+unAutor.getIdCarrera()+"')");
                 agregado=true;
                 st.close();
             }
@@ -40,7 +39,7 @@ public class AutorDAO {
 			if(con!=null){
 				Statement st;
 				st = con.createStatement();
-				ResultSet rs = st.executeQuery("SELECT nombre FROM autor WHERE idAutor="+Integer.parseInt(unNuevoLogin.getMatricula())+" and contraseña='"+unNuevoLogin.getContraseña()+"'");
+				ResultSet rs = st.executeQuery("SELECT nombre FROM autor WHERE idAutor="+unNuevoLogin.getIdAutor()+" and contraseña='"+unNuevoLogin.getContraseña()+"'");
 				
                                 
                                 if(rs.next()){

@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author Luis Toral
  */
-public class RecursoDAO {
+public class ComentariosDAO {
 
     public static boolean agregarRecurso(RecursoVO unNuevoRecurso) {
         

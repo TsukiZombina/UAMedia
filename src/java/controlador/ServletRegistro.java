@@ -35,16 +35,17 @@ public class ServletRegistro extends HttpServlet {
         
 	
                 String nombre=request.getParameter("nombre");
-                String genero=request.getParameter("genero");
+                String sexo=request.getParameter("genero");
                 String fechaNacimiento=request.getParameter("fechaNacimiento");              
                 String nick=request.getParameter("nick");
-                String matricula = request.getParameter("matricula");
+                int matricula = Integer.parseInt(request.getParameter("matricula"));
                         
 		String correo=request.getParameter("correo");
                 String division=request.getParameter("carrera");
                 String pass=request.getParameter("pass");
-                String passR=request.getParameter("passR");
-                String rol= request.getParameter("rol");
+                String passR = request.getParameter("passR");
+                int idTipoRol = Integer.parseInt(request.getParameter("rol"));
+                int idCarrera = Integer.parseInt(request.getParameter("carrera"));
 
                 String contraseña="";
                 
@@ -53,13 +54,9 @@ public class ServletRegistro extends HttpServlet {
                 else
                     request.getRequestDispatcher("error.jsp").forward(request, response);
             
-                System.out.print(matricula);                
-
-                int id = Integer.parseInt(matricula);
-                System.out.print(id);
-                
+                System.out.print(matricula);                                
                 //public AutorVO(String id, String nombre, String correo, String sexo, String contraseña) {
-	        AutorVO unAutor=new AutorVO(nombre, genero, fechaNacimiento, nick, id, correo, division, contraseña, rol);
+	        AutorVO unAutor=new AutorVO(matricula, nombre, correo,  sexo, fechaNacimiento, contraseña, nick, idTipoRol, idCarrera);
 			boolean respuesta=AutorDAO.agregarAutor(unAutor);
                         if(!nombre.isEmpty()){
                             if(respuesta){

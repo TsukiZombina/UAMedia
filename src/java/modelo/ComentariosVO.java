@@ -4,7 +4,7 @@ package modelo;
  *
  * @author Horowitz
  */
-public class RecursoVO {
+public class ComentariosVO {
     private int id;
 
     public int getId() {
@@ -25,7 +25,7 @@ public class RecursoVO {
     private String temaGeneral;
     private int tamaño;
 
-    public RecursoVO(String nombre, String descripcion, String fechaPublicacion, String URL, int tamaño, String licencia, String tipoRecurso, String temaGeneral) {
+    public ComentariosVO(String nombre, String descripcion, String fechaPublicacion, String URL, int tamaño, String licencia, String tipoRecurso, String temaGeneral) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fechaPublicacion = fechaPublicacion;
@@ -39,7 +39,7 @@ public class RecursoVO {
     }
 
 
-    RecursoVO(String nombre, String descripcion, String fechaPublicacion, String URL) {
+    ComentariosVO(String nombre, String descripcion, String fechaPublicacion, String URL) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fechaPublicacion = fechaPublicacion;
