@@ -16,7 +16,7 @@ public class AutorDAO {
             if(con!=null){
                 Statement st;
                 st = con.createStatement();
-                st.executeUpdate("INSERT INTO uamedia.autor(`idAutor`,`nombre`,`correo`,`sexo`,`fechaNacimiento`,`contraseña`,`nick`,`tipoRol_idTipoRol`,`uEA_idUEA`,`Carrera_idCarrera`) VALUES ("+unAutor.getIdAutor()+",'"+unAutor.getNombre()+"','"+unAutor.getCorreo()+"','"+unAutor.getSexo()+"','"+unAutor.getFechaDeNacimiento()+"','"+unAutor.getContraseña()+"','"+unAutor.getNick()+"','"+unAutor.getIdTipoRol()+"','"+unAutor.getIdCarrera()+"')");
+                st.executeUpdate("INSERT INTO uamedia.autor(`idAutor`,`nombre`,`correo`,`sexo`,`fechaNacimiento`,`contraseña`,`nick`) VALUES ("+unAutor.getIdAutor()+",'"+unAutor.getNombre()+"','"+unAutor.getCorreo()+"','"+unAutor.getSexo()+"','"+unAutor.getFechaDeNacimiento()+"','"+unAutor.getContraseña()+"','"+unAutor.getNick()+"')");
                 agregado=true;
                 st.close();
             }

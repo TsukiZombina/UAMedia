@@ -58,7 +58,7 @@
 
             <!--Sección Cuerpo Principal-->
             <section id="cuerpo_principal">
-                <h1>Tema > Materia</h1>
+                <h1>Tema > <%=request.getAttribute("temaGeneral0")%></h1>
 
                 <section id="despliegueRecurso">
                 <h2><h2>     
@@ -78,7 +78,7 @@
 
                             <tr class="cabecera">
                                     <td><h1>Materia:</h1></td>
-                                    <td colspan="2"><p>Programación</p></td>
+                                    <td colspan="2"><p><%=request.getAttribute("temaGeneral0")%></p></td>
                             </tr>
                             
                             <tr class="cabecera">
@@ -89,7 +89,7 @@
                             <tr >
                                     <td rowspan="5">
                                             <figure class="portada">
-                                    <img src="imgs/big_data.jpg"/>
+                                    <img src="imgs/descarga.png"/>
                             </figure>
                                     </td>
 
@@ -107,7 +107,7 @@
 
                             <tr>
                                     <td><h2>Fecha de Publicación:</h2></td>
-                                    <td><h3><%=request.getAttribute("fechaPublicacion0")%></h3></td>
+                                    <td><h3><%=request.getAttribute("fecha0")%></h3></td>
                             </tr>
 
                             <tr>

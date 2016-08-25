@@ -58,6 +58,10 @@ public class ServletDesplegarRecurso extends HttpServlet{
                request.setAttribute("descripcion"+i,v.getDescripcion());
                request.setAttribute("fecha"+i,v.getFechaPublicacion());
                request.setAttribute("url"+i,v.getURL());
+               request.setAttribute("tamaño"+i,v.getTamaño());
+               request.setAttribute("licencia"+i,v.getLicencia());
+               request.setAttribute("tipo"+i,v.getTipoRecurso());
+               request.setAttribute("temaGeneral"+i,v.getTemaGeneral());
                i++;
             }       
                 

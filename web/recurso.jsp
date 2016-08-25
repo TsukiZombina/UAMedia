@@ -108,8 +108,8 @@
                     </select>
                 
                 <h3>Autor/es</h3>
-                <h1><input type="text" name="autor" placeholder="autor(es)"></h1>
-            
+                <h1><input type="text" name="autor" value=${sessionScope.matricula} readonly></h1>
+          
                 <h3>Tipo Recurso</h3>
                     <select name="tipoRecurso">
                         <option value="Video">Video</option>
@@ -129,16 +129,15 @@
                         <option value="CreativeCommons">CreativeCommons</option>     
                     </select>
                             
-                <h3>Enlace del recurso/video</h3>
+      <!--         <h3>Enlace del recurso/video</h3>
                 <h1><input type="url" name="enlaceExterno" placeholder="Ingresa URL del recurso externo"></h1>
-
-                    
-            
+-->
+       
             <table id="tablaBoton">
                 <tr>
                     <td></td>
                     <td> 
-                        <h3>o</h3>
+                        <h3>Seleccionar archivo a subir</h3>
                     </td>
                     <td></td>
                 </tr>     
@@ -152,13 +151,10 @@
                     <td></td>
                 </tr>            
             </table>
-         
-
-            
+           
             <div id="botonCompartir">
                     <input type="submit" value="Compartir Recurso">
-					</div>
-
+            </div>
 </form>
 				
                 

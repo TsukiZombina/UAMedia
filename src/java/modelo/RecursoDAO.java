@@ -22,9 +22,8 @@ public class RecursoDAO {
 			if(con!=null){
 				Statement st;
 				st = con.createStatement();
-				st.executeUpdate("INSERT INTO Recurso(`nombreRecurso`,`descripcionRecurso`,`fechaPublicacion`,`url`,`tamaño`,`licencia`,`tipoRecurso`,`temaGeneral`) VALUES ('"+unNuevoRecurso.getNombre()+"','"+unNuevoRecurso.getDescripcion()+"','"+unNuevoRecurso.getFechaPublicacion()+"','"+unNuevoRecurso.getURL()+"','"+unNuevoRecurso.getTamaño()+"','"+unNuevoRecurso.getLicencia()+"','"+unNuevoRecurso.getTipoRecurso()+"','"+unNuevoRecurso.getTemaGeneral()+"')");
-                        //        st.executeUpdate("INSERT INTO ")            
-                                st.executeUpdate("INSERT INTO publicacion(`Autor_idAutor`,`Recurso_idRecurso`) VALUES ('"+unNuevoRecurso.getId()+"','"+unNuevoRecurso.getDescripcion()+"')");
+				st.executeUpdate("INSERT INTO recurso(`nombreRecurso`,`descripcionRecurso`,`fechaPublicacion`,`url`,`tamaño`,`licencia`,`tipoRecurso`,`temaGeneral`) VALUES ('"+unNuevoRecurso.getNombre()+"','"+unNuevoRecurso.getDescripcion()+"','"+unNuevoRecurso.getFechaPublicacion()+"','"+unNuevoRecurso.getURL()+"',"+unNuevoRecurso.getTamaño()+",'"+unNuevoRecurso.getLicencia()+"','"+unNuevoRecurso.getTipoRecurso()+"','"+unNuevoRecurso.getTemaGeneral()+"')");
+                                st.executeUpdate("INSERT INTO publicacion(`Autor_idAutor`,`Recurso_idRecurso`) VALUES ("+unNuevoRecurso.getIdAutor()+","+unNuevoRecurso.getIdRecurso()+")");
                         
                         agregado=true;
 				st.close();
@@ -172,19 +171,25 @@ public class RecursoDAO {
 			if(con!=null){
 				Statement st;
 				st = con.createStatement();
-                               String query = "SELECT nombreRecurso, descripcionRecurso, fechaPublicacion, url FROM recurso where nombreRecurso='"+atributoBusqueda+"'";
+                               String query = "SELECT nombreRecurso, descripcionRecurso, fechaPublicacion, idAutor, url, tamaño, licencia, tipoRecurso, temaGeneral FROM recurso where nombreRecurso='"+atributoBusqueda+"'";
 
                                 ResultSet rs = st.executeQuery(query);
 				
                                 listaRecursos = new ArrayList();
                 while(rs.next()){
                 //    VideosVO video = new VideosVO();
-                    RecursoVO libro = new RecursoVO(rs.getString("nombreRecurso"),rs.getString("descripcionRecurso"),rs.getString("fechaPublicacion"),rs.getString("fechaPublicacion"));
-                    libro.setNombre(rs.getString("nombreRecurso"));
-                    libro.setDescripcion(rs.getString("descripcionRecurso"));
-                    libro.setFechaPublicacion(rs.getString("fechaPublicacion"));
-                    libro.setURL(rs.getString("url"));
-                    listaRecursos.add(libro);
+                    RecursoVO recurso = new RecursoVO(rs.getInt("idRecurso"),rs.getString("nombreRecurso"),rs.getString("descripcionRecurso"),
+                                            rs.getString("fechaPublicacion"),rs.getInt("idAutor"),rs.getString("url"),rs.getInt("tamaño"),
+                                            rs.getString("licencia"),rs.getString("tipoRecurso"),rs.getString("temaGeneral"));
+                    recurso.setNombre(rs.getString("nombreRecurso"));
+                    recurso.setDescripcion(rs.getString("descripcionRecurso"));
+                    recurso.setFechaPublicacion(rs.getString("fechaPublicacion"));
+                    recurso.setURL(rs.getString("url"));
+                    recurso.setTamaño(rs.getInt("tamaño"));
+                    recurso.setLicencia(rs.getString("licencia"));
+                    recurso.setTipoRecurso(rs.getString("tipoRecurso"));
+                    recurso.setTemaGeneral(rs.getString("temaGeneral"));                    
+                    listaRecursos.add(recurso);
                //     listaVideos.addElement(video);
                 }                  
                 rs.close();  
@@ -198,5 +203,30 @@ public class RecursoDAO {
 		return listaRecursos;      
     }  
 
-    
+           public static int obtenerUltimoIdRecurso() {
+
+		try {
+			ConexionBD c = new ConexionBD();
+			Connection con = c.getConexion();
+			if(con!=null){
+                            int a = 0;
+				Statement st;
+				st = con.createStatement();
+				ResultSet rs = st.executeQuery("SELECT max(idRecurso) FROM recurso");
+                                if(rs.next()){
+                                  a = Integer.parseInt(rs.getString(1));
+                                }st.close();
+                                return a;
+                                
+                                	
+                        }
+                        c.cerrarConexion();
+			
+		} catch (SQLException e){
+			e.printStackTrace();
+                        
+		}
+                return 0;
+           }     
 }
+ 

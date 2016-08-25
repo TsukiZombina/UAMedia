@@ -8,7 +8,14 @@
 </head>
 <body>
 <section>
-    <label>El alumno ha sido registrado exitosamente!.</label>
+    <p>Bienvenido!!</a>
+        <label>¡Has sido registrado exitosamente!</label>
+
+    <h2>Ahora puedes ingresar</h2>
+    <a href="login.jsp">Da click aquí si no eres redireccionado automáticamente</a>
+    
+    <meta http-equiv="Refresh" content="3" url="login.jsp"/>
+
 </section>
 </body>
 </html>

@@ -24,7 +24,7 @@ public class ComentariosDAO {
 				st = con.createStatement();
 				st.executeUpdate("INSERT INTO Recurso(`nombreRecurso`,`descripcionRecurso`,`fechaPublicacion`,`url`,`tamaño`,`licencia`,`tipoRecurso`,`temaGeneral`) VALUES ('"+unNuevoRecurso.getNombre()+"','"+unNuevoRecurso.getDescripcion()+"','"+unNuevoRecurso.getFechaPublicacion()+"','"+unNuevoRecurso.getURL()+"','"+unNuevoRecurso.getTamaño()+"','"+unNuevoRecurso.getLicencia()+"','"+unNuevoRecurso.getTipoRecurso()+"','"+unNuevoRecurso.getTemaGeneral()+"')");
                         //        st.executeUpdate("INSERT INTO ")            
-                                st.executeUpdate("INSERT INTO publicacion(`Autor_idAutor`,`Recurso_idRecurso`) VALUES ('"+unNuevoRecurso.getId()+"','"+unNuevoRecurso.getDescripcion()+"')");
+//                                st.executeUpdate("INSERT INTO publicacion(`Autor_idAutor`,`Recurso_idRecurso`) VALUES ('"+unNuevoRecurso.getId()+"','"+unNuevoRecurso.getDescripcion()+"')");
                         
                         agregado=true;
 				st.close();

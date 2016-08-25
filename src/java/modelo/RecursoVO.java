@@ -6,45 +6,53 @@ package modelo;
  */
 public class RecursoVO {
     private int id;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
     private String nombre;	
     private String descripcion;
     private String fechaPublicacion;
     private String URL;
-
+    private int idAutor;
     private String calificacionPromedio;
     private String licencia;
     private String tipoRecurso;
     private String temaGeneral;
     private int tamaño;
 
-    public RecursoVO(String nombre, String descripcion, String fechaPublicacion, String URL, int tamaño, String licencia, String tipoRecurso, String temaGeneral) {
+    public RecursoVO(int id,String nombre, String descripcion, String fechaPublicacion, int idAutor, String URL, int tamaño, String licencia, String tipoRecurso, String temaGeneral) {
+        this.id=id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fechaPublicacion = fechaPublicacion;
+        this.idAutor = idAutor;
         this.URL = URL;
         this.calificacionPromedio = calificacionPromedio;
+        this.tamaño = tamaño;
         this.licencia = licencia;
         this.tipoRecurso = tipoRecurso;
-        this.temaGeneral = temaGeneral;
-        this.tamaño = tamaño;
-      
+        this.temaGeneral = temaGeneral; 
+      }
+
+
+    public int getIdRecurso() {
+        return id;
     }
 
+    public void setIdRecurso(int id) {
+        this.id = id;
+    }
+    
+    public int getIdAutor() {
+        return idAutor;
+    }
+
+    public void setIdAutor(int idAutor) {
+        this.idAutor = idAutor;
+    }
 
     RecursoVO(String nombre, String descripcion, String fechaPublicacion, String URL) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fechaPublicacion = fechaPublicacion;
         this.URL = URL;
-
     }
 
     public String getNombre() {

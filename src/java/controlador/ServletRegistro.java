@@ -44,8 +44,8 @@ public class ServletRegistro extends HttpServlet {
                 String division=request.getParameter("carrera");
                 String pass=request.getParameter("pass");
                 String passR = request.getParameter("passR");
-                int idTipoRol = Integer.parseInt(request.getParameter("rol"));
-                int idCarrera = Integer.parseInt(request.getParameter("carrera"));
+                //int idTipoRol = Integer.parseInt(request.getParameter("rol"));
+                //int idCarrera = Integer.parseInt(request.getParameter("carrera"));
 
                 String contraseña="";
                 
@@ -56,7 +56,7 @@ public class ServletRegistro extends HttpServlet {
             
                 System.out.print(matricula);                                
                 //public AutorVO(String id, String nombre, String correo, String sexo, String contraseña) {
-	        AutorVO unAutor=new AutorVO(matricula, nombre, correo,  sexo, fechaNacimiento, contraseña, nick, idTipoRol, idCarrera);
+	        AutorVO unAutor=new AutorVO(matricula, nombre, correo,  sexo, fechaNacimiento, contraseña, nick, 1, 1);
 			boolean respuesta=AutorDAO.agregarAutor(unAutor);
                         if(!nombre.isEmpty()){
                             if(respuesta){

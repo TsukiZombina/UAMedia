@@ -67,8 +67,8 @@
                     <b>Sexo:</b>
                     <h1>
                         <select name="genero">
-                            <option value="Masculino">Masculino</option>
-                            <option value="Femenino">Femenino</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
                             
                         </select>
                     </h1>

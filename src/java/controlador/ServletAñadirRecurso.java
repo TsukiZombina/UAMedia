@@ -49,6 +49,8 @@ public class ServletAñadirRecurso extends HttpServlet{
             String fecha = ft.format(fechaAhora);
             /*************************************/
             
+            String RUTA_SERVIDOR = "C:/Users/Kori/Documents/Upload/";
+            
             /*FileItemFactory es una interfaz para crear FileItem*/
             FileItemFactory file_factory = new DiskFileItemFactory();
             
@@ -57,14 +59,15 @@ public class ServletAñadirRecurso extends HttpServlet{
             /*sacando los FileItem del ServletFileUpload en una lista */
             List items = servlet_up.parseRequest(request);
             
-
+            int idRecurso=0;
             String nombreRecurso = null;
             String descripcionRecurso = null;
-            String autor = null;
-            String enlace = null;
+            int autor = 0;
+            //String enlace = null;
             String enlaceDocumento = null;
             String tema = null;
             String materia = null;
+            String idAutor= null;
             //String fecha=request.getParameter("fecha");
             String tipoRecurso = null;
             String licencia = null;
@@ -87,22 +90,24 @@ public class ServletAñadirRecurso extends HttpServlet{
                 //    System.out.println("Aqui sí entra 6");
                    
                     /*cual sera la ruta al archivo en el servidor*/
-                    File archivo = new File("C:/Users/Eraserhead/Desktop/ejercicio 4/subidos/", uploaded.getName());
+                    File archivo = new File("C:/Users/Kori/Documents/Upload/", uploaded.getName());
                     /*y lo escribimos en el servidor*/
                     uploaded.write(archivo);
-                //   System.out.println("Aqui sí entra 7");
+                   //System.out.println("Aqui sí entra 7");
      
-                       System.out.println("Nombre --> " + uploaded.getName() );
+                       System.out.println("Nombre --> " + uploaded.getName());
                        System.out.println("Tipo --> " + uploaded.getContentType());
                        System.out.println("tamaño --> " + (uploaded.getSize()/1240)+ "KB");
                        
-                enlaceDocumento = uploaded.getName();     
+                       
+                       tamaño = (int) (uploaded.getSize()/1024);
+                       enlaceDocumento = uploaded.getName();     
                 }
                 // es un campo de formulario, podemos obtener clave y valor                
                 else{
                     String key = uploaded.getFieldName();
                     String valor = uploaded.getString();
-                    System.out.print("clave: "+key+" valor: "+valor);
+                    System.out.println("CLAVE: "+key+" VALOR: "+valor);
                     
               
                     
@@ -118,18 +123,19 @@ public class ServletAñadirRecurso extends HttpServlet{
                         case "descripcion":
                             descripcionRecurso=valor;
                             break;
-                        case "autor":
-                            autor=valor;
-                            break;
-                        case "enlaceExterno":
-                            enlace=valor;
-                            break;
                         case "tema":
                             tema=valor;
                             break;
                         case "materia":
                             materia=valor;
                             break;
+                        case "autor":
+                            idAutor=valor;
+                            break;
+                        //case "enlaceExterno":
+                        //    enlace=valor;
+                        //    break;
+
                         case "tipoRecurso":
                             tipoRecurso=valor;
                             break;
@@ -142,14 +148,14 @@ public class ServletAñadirRecurso extends HttpServlet{
                     }
                 }
             }
-
-            enlace = enlaceDocumento;
+            idRecurso = RecursoDAO.obtenerUltimoIdRecurso()+1;
+            autor=Integer.parseInt(idAutor);
             RecursoVO unNuevoRecurso;
-            //System.out.println(nombreRecurso+descripcionRecurso+tema+materia+autor+tipoRecurso+enlace+fecha);
+           // System.out.println(nombreRecurso+descripcionRecurso+tema+materia+autor+tipoRecurso+enlaceDocumento+fecha);
     //        if (enlace==null)
   //              unNuevoRecurso=new RecursoVO(nombreRecurso, descripcionRecurso, fecha,  enlaceDocumento, tamaño, licencia, tipoRecurso, tema);
 //            else
-                unNuevoRecurso=new RecursoVO(nombreRecurso, descripcionRecurso, fecha,  enlace, tamaño, licencia,   tipoRecurso, tema);
+               unNuevoRecurso=new RecursoVO(idRecurso,nombreRecurso, descripcionRecurso, fecha, autor, enlaceDocumento, tamaño, licencia,   tipoRecurso, tema);
             
             boolean respuesta=RecursoDAO.agregarRecurso(unNuevoRecurso);
             
