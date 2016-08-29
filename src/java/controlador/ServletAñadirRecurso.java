@@ -66,12 +66,12 @@ public class ServletAñadirRecurso extends HttpServlet{
             //String enlace = null;
             String enlaceDocumento = null;
             String tema = null;
-            String materia = null;
             String idAutor= null;
             //String fecha=request.getParameter("fecha");
             String tipoRecurso = null;
             String licencia = null;
             int tamaño = 50;
+            String uea = null;
 
             // request es la HttpServletRequest que recibimos del formulario.
             // Los items obtenidos serán cada uno de los campos del formulario,
@@ -126,8 +126,8 @@ public class ServletAñadirRecurso extends HttpServlet{
                         case "tema":
                             tema=valor;
                             break;
-                        case "materia":
-                            materia=valor;
+                        case "uea":
+                            uea = valor;
                             break;
                         case "autor":
                             idAutor=valor;
@@ -142,6 +142,7 @@ public class ServletAñadirRecurso extends HttpServlet{
                         case "tipoLicencia":
                             licencia=valor;
                             break;
+
                         default:
                             licencia="copyRight";
                             break;
@@ -155,7 +156,7 @@ public class ServletAñadirRecurso extends HttpServlet{
     //        if (enlace==null)
   //              unNuevoRecurso=new RecursoVO(nombreRecurso, descripcionRecurso, fecha,  enlaceDocumento, tamaño, licencia, tipoRecurso, tema);
 //            else
-               unNuevoRecurso=new RecursoVO(idRecurso,nombreRecurso, descripcionRecurso, fecha, autor, enlaceDocumento, tamaño, licencia,   tipoRecurso, tema);
+               unNuevoRecurso=new RecursoVO(idRecurso,nombreRecurso, descripcionRecurso, fecha, autor, enlaceDocumento, tamaño, licencia,   tipoRecurso, tema, uea);
             
             boolean respuesta=RecursoDAO.agregarRecurso(unNuevoRecurso);
             

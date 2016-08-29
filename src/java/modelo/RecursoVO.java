@@ -16,8 +16,31 @@ public class RecursoVO {
     private String tipoRecurso;
     private String temaGeneral;
     private int tamaño;
+    private String uea;
 
-    public RecursoVO(int id,String nombre, String descripcion, String fechaPublicacion, int idAutor, String URL, int tamaño, String licencia, String tipoRecurso, String temaGeneral) {
+    RecursoVO(String nombre, String descripcion, String fechaPublicacion, String URL, int tamaño, String licencia, String tipoRecurso, String temaGeneral, String uea) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.fechaPublicacion = fechaPublicacion;
+        this.URL = URL;
+        this.tamaño = tamaño;
+        this.licencia = licencia;
+        this.tipoRecurso = tipoRecurso;
+        this.temaGeneral = temaGeneral; 
+        this.uea=uea;
+      }
+
+
+
+    public String getUea() {
+        return uea;
+    }
+
+    public void setUea(String uea) {
+        this.uea = uea;
+    }
+
+    public RecursoVO(int id, String nombre, String descripcion, String fechaPublicacion, int idAutor, String URL, int tamaño, String licencia, String tipoRecurso, String temaGeneral, String uea) {
         this.id=id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -29,6 +52,7 @@ public class RecursoVO {
         this.licencia = licencia;
         this.tipoRecurso = tipoRecurso;
         this.temaGeneral = temaGeneral; 
+        this.uea=uea;
       }
 
 

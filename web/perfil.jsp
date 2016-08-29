@@ -3,7 +3,9 @@
     Created on : 25/06/2016, 07:42:14 PM
     Author     : Luis Toral
 --%>
-
+<%@page import="modelo.RecursoDAO"%>
+<%@page import="java.util.List"%>
+<%@page import="modelo.RecursoVO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -80,7 +82,7 @@
 							<th>Usuario:</th>
 							<td><p>${sessionScope.NombreSesion}</p></td>
                                                         <th>Rol:</th>
-							<td><p>Estudiante</p></td>
+							<td><p>${sessionScope.TipoRol}</p></td>
 						</tr>
 						<tr>
 							<th>Carrera:</th>
@@ -105,103 +107,74 @@
 				</table>
 			</section>
 
+                                                        
+                                                        
+
+<%
+    List<RecursoVO> listaRecursosPorAutor = RecursoDAO.obtenerRecursosPorAutor(2113033704); 
+%>
+            <center><table border="1">
+              <tr>
+                  <th>Nombre del Alumno</th>
+                  <th>Apellido</th>
+                  <th>Correo</th>
+                  <th>Carrera</th>
+              </tr>
+<% for(RecursoVO recurso: listaRecursosPorAutor){ %>
+              <tr>
+                  <td><%= recurso.getNombre() %></td>
+                  <td><%= recurso.getTipoRecurso() %></td>
+                  <td><%= recurso.getFechaPublicacion() %></td>
+                  <td><%= recurso.getUea() %></td>
+                  <td><%= recurso.getTemaGeneral() %></td>
+      
+              </tr>
+<% } %>
+          </table>
+
 			<section id="horario">
 				<table>
 					<tbody>
 						<tr>
-							<th>Nombre UEA</th>
-							<th>Archivos</th>
-                            <th>Novedades</th>
-							<th>Contribuciones</th>
-							<th>Comentarios</th>
-							<th>Foros</th>
+							<th>Nombre Recurso</th>
+							<th>Tipo Recurso</th>
+                                                        <th>Fecha Publicación</th>
+                                                        <th>Tema General</th>
+                                                        <th>UEA</th>
 						</tr>
 						<tr>
 							<td>Interacción Humano Computadora</td>
 							<td>18</td>
 							<td>2</td>
-                            <td>1</td>
-							<td>1</td>
-							<td>0</td>
+                                                        <td>2</td>
+                                                        <td>2</td>
 						</tr>
 						<tr>
 							<td>Gráficas por computadora</td>
 							<td>22</td>
 							<td>3</td>
-                            <td>2</td>
-							<td>1</td>
-							<td>1</td>
+                                                        <td>2</td>
+                                                        <td>2</td>
 						</tr>
 						<tr>
 							<td>Lenguajes y Autómatas</td>
 							<td>9</td>
 							<td>1</td>
-                            <td>1</td>
-							<td>2</td>
-							<td>1</td>
+                                                        <td>2</td>
+                                                        <td>2</td>
 						</tr>
 						<tr>
 							<td>Estructura de Datos</td>
 							<td>4</td>
 							<td>3</td>
-                            <td>2</td>
-							<td>2</td>
-							<td>2</td>
+                                                        <td>2</td>
+                                                        <td>2</td>
 						</tr>
 					</tbody>
 				</table>
 			</section>
 
 
-
-			<section id="horario_equivalente">
-				<table>
-					<tbody>
-						<tr>
-							<th>UEA / Grupo</th>
-							<th>Profesor</th>
-							<th>Clave / Créditos</th>
-							<th>Horario / Salón</th>
-
-						</tr>
-						<tr>
-							<td>Interacción Humano Computadora<br>C102</td>
-							<td>FIGUEROA GONZALEZ JOSUE</td>
-                            <td>112255<br>7</td>
-							<td>Lunes, Miercoles, Vieres: 7:00-8:30<br>F-302</td>
-
-						</tr>
-						<tr>
-							<td>Gráficas por computadora<br>D150</td>
-							<td>RANGEL KUOPPA RISTO FERMIN</td>
-                            <td>115588<br>9</td>
-							<td>Lunes, Miercoles, Vieres: 8:30-10:00<br>T-102</td>
-
-						</tr>
-						<tr>
-							<td>Lenguajes y Autómatas<br>A451</td>
-							<td>AGUILAR ZAVOZNIK ALEJANDRO</td>
-                            <td>112258<br>9</td>
-							<td>Lunes, Miercoles, Vieres: 10:00-11:30<br>G-302</td>
-
-						</tr>
-						<tr>
-							<td>Estructura de Datos<br>C872</td>
-							<td>MARICELA BRAVO CONTRERAS</td>
-                            <td>114569<br>8</td>
-							<td>Lunes, Miercoles, Vieres: 11:30-13:00<br>H-109</td>
-
-						</tr>
-						<tr>
-							<td>Bases de Datos<br>C023</td>
-							<td>PROFESOR TEMPORAL</td>
-							<td>115847<br>12</td>
-							<td>Lunes, Miercoles, Vieres: 13:00-14:30<br>T-115</td>
-
-						</tr>
-					</tbody>
-				</table>
-			</section>
 
 			</section>
 			<!--Fin Sección Cuerpo Principal-->
@@ -219,3 +192,4 @@
 	>
     </body>
 </html>
+

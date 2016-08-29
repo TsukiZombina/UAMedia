@@ -22,7 +22,7 @@ public class RecursoDAO {
 			if(con!=null){
 				Statement st;
 				st = con.createStatement();
-				st.executeUpdate("INSERT INTO recurso(`nombreRecurso`,`descripcionRecurso`,`fechaPublicacion`,`url`,`tamaño`,`licencia`,`tipoRecurso`,`temaGeneral`) VALUES ('"+unNuevoRecurso.getNombre()+"','"+unNuevoRecurso.getDescripcion()+"','"+unNuevoRecurso.getFechaPublicacion()+"','"+unNuevoRecurso.getURL()+"',"+unNuevoRecurso.getTamaño()+",'"+unNuevoRecurso.getLicencia()+"','"+unNuevoRecurso.getTipoRecurso()+"','"+unNuevoRecurso.getTemaGeneral()+"')");
+				st.executeUpdate("INSERT INTO recurso(`nombreRecurso`,`descripcionRecurso`,`fechaPublicacion`,`url`,`tamaño`,`licencia`,`tipoRecurso`,`temaGeneral`,`uea`) VALUES ('"+unNuevoRecurso.getNombre()+"','"+unNuevoRecurso.getDescripcion()+"','"+unNuevoRecurso.getFechaPublicacion()+"','"+unNuevoRecurso.getURL()+"',"+unNuevoRecurso.getTamaño()+",'"+unNuevoRecurso.getLicencia()+"','"+unNuevoRecurso.getTipoRecurso()+"','"+unNuevoRecurso.getTemaGeneral()+"','"+unNuevoRecurso.getUea()+"')");
                                 st.executeUpdate("INSERT INTO publicacion(`Autor_idAutor`,`Recurso_idRecurso`) VALUES ("+unNuevoRecurso.getIdAutor()+","+unNuevoRecurso.getIdRecurso()+")");
                         
                         agregado=true;
@@ -171,16 +171,17 @@ public class RecursoDAO {
 			if(con!=null){
 				Statement st;
 				st = con.createStatement();
-                               String query = "SELECT nombreRecurso, descripcionRecurso, fechaPublicacion, idAutor, url, tamaño, licencia, tipoRecurso, temaGeneral FROM recurso where nombreRecurso='"+atributoBusqueda+"'";
+                               String query = "SELECT nombreRecurso, descripcionRecurso, fechaPublicacion, url, tamaño, licencia, tipoRecurso, temaGeneral, uea FROM recurso where nombreRecurso='"+atributoBusqueda+"'";
 
                                 ResultSet rs = st.executeQuery(query);
 				
                                 listaRecursos = new ArrayList();
                 while(rs.next()){
                 //    VideosVO video = new VideosVO();
-                    RecursoVO recurso = new RecursoVO(rs.getInt("idRecurso"),rs.getString("nombreRecurso"),rs.getString("descripcionRecurso"),
-                                            rs.getString("fechaPublicacion"),rs.getInt("idAutor"),rs.getString("url"),rs.getInt("tamaño"),
-                                            rs.getString("licencia"),rs.getString("tipoRecurso"),rs.getString("temaGeneral"));
+                    RecursoVO recurso = new RecursoVO(rs.getString("nombreRecurso"),rs.getString("descripcionRecurso"),
+                                            rs.getString("fechaPublicacion"),rs.getString("url"),rs.getInt("tamaño"),
+                                            rs.getString("licencia"),rs.getString("tipoRecurso"),rs.getString("temaGeneral"),
+                                            rs.getString("uea"));
                     recurso.setNombre(rs.getString("nombreRecurso"));
                     recurso.setDescripcion(rs.getString("descripcionRecurso"));
                     recurso.setFechaPublicacion(rs.getString("fechaPublicacion"));
@@ -188,7 +189,8 @@ public class RecursoDAO {
                     recurso.setTamaño(rs.getInt("tamaño"));
                     recurso.setLicencia(rs.getString("licencia"));
                     recurso.setTipoRecurso(rs.getString("tipoRecurso"));
-                    recurso.setTemaGeneral(rs.getString("temaGeneral"));                    
+                    recurso.setTemaGeneral(rs.getString("temaGeneral"));
+                    recurso.setUea(rs.getString("uea"));
                     listaRecursos.add(recurso);
                //     listaVideos.addElement(video);
                 }                  
@@ -219,7 +221,7 @@ public class RecursoDAO {
                                 return a;
                                 
                                 	
-                        }
+                        } 
                         c.cerrarConexion();
 			
 		} catch (SQLException e){
@@ -228,5 +230,49 @@ public class RecursoDAO {
 		}
                 return 0;
            }     
+           
+
+        public static List<RecursoVO> obtenerRecursosPorAutor(int autor) {
+        List<RecursoVO> listaRecursos = null;
+   //     String query = "SELECT nombreRecurso, descripcionRecurso, fechaPublicacion, url FROM recurso where nombreRecurso='"+atributoBusqueda+"'";
+
+       
+		try {
+			ConexionBD c=new ConexionBD();
+			Connection con=c.getConexion();
+			if(con!=null){
+				Statement st;
+				st = con.createStatement();
+                                String query = "select nombreRecurso, descripcionRecurso, fechaPublicacion, url, tamaño, licencia, tipoRecurso, temaGeneral, uea FROM recurso, publicacion WHERE publicacion.recurso_idRecurso = recurso.idRecurso AND Autor_idAutor="+autor;
+
+                                ResultSet rs = st.executeQuery(query);
+				
+                                listaRecursos = new ArrayList();
+                while(rs.next()){
+                //    VideosVO video = new VideosVO();
+                    RecursoVO recurso = new RecursoVO(rs.getInt("idRecurso"),rs.getString("nombreRecurso"),rs.getString("descripcionRecurso"),
+                                            rs.getString("fechaPublicacion"),rs.getInt("idAutor"),rs.getString("url"),rs.getInt("tamaño"),
+                                            rs.getString("licencia"),rs.getString("tipoRecurso"),rs.getString("temaGeneral"),
+                                            rs.getString("uea"));
+                    recurso.setNombre(rs.getString("nombreRecurso"));
+                    recurso.setDescripcion(rs.getString("descripcionRecurso"));
+                    recurso.setFechaPublicacion(rs.getString("fechaPublicacion"));
+                    recurso.setURL(rs.getString("url"));
+                    recurso.setTamaño(rs.getInt("tamaño"));
+                    recurso.setLicencia(rs.getString("licencia"));
+                    recurso.setTipoRecurso(rs.getString("tipoRecurso"));
+                    recurso.setTemaGeneral(rs.getString("temaGeneral"));
+                    recurso.setUea(rs.getString("uea"));
+                    listaRecursos.add(recurso);
+                }                  
+                rs.close();  
+                st.close();                
+			}
+			c.cerrarConexion();
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		return listaRecursos;      
 }
- 
+}

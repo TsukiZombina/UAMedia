@@ -101,7 +101,7 @@
                     
                     
                     <h3>Materia</h3>
-                    <select name="materia">
+                    <select name="uea">
                         <option value="Programación Estructurada">Programación Estructurada</option>
                         <option value="Programación Orientada a Objetos">Programación Orientada a Objetos</option>
                         <option value="Programación Orientada a Eventos">Programación Orientada a Eventos</option>

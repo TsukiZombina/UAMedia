@@ -10,6 +10,12 @@
     <body>
         <section>
             <label>El recurso ha sido registrado exitosamente!.</label>
+            
+            
+                <h2>Ir a mi perfil</h2>
+                <a href="perfil.jsp">Da click aquí si no eres redireccionado automáticamente</a>
+    
+                <meta http-equiv="Refresh" content="3" url="perfil.jsp"/>
         </section>
     </body>
 </html>
